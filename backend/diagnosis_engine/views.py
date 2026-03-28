@@ -139,7 +139,7 @@ class PipelineStatusView(APIView):
                 'status': 'active',
                 'api_connected': bert.api_available,
                 'model': 'HuggingFace API (BioBERT NER)' if bert.api_available else 'Rule-based NER (no HF_API_KEY)',
-                'ner_model': bert.NER_MODEL,
+                'ner_model': getattr(bert, 'BIOBERT_PRIMARY', 'n/a'),
             },
             'graph_rag': {
                 'status': 'active',

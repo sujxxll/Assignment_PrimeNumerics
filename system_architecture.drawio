@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-03-28T00:00:00.000Z" agent="Mozilla/5.0" version="22.0.0" type="device">
+  <diagram id="healthai-arch" name="System Architecture">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Actors -->
+        <mxCell id="user" value="Healthcare Professional" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="30" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Subsystems -->
+        <mxCell id="frontend" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Frontend Presentation&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Next.js 16.2.1&lt;/li&gt;&lt;li&gt;React 19&lt;/li&gt;&lt;li&gt;Material UI (MUI)&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;spacingTop=4;spacingBottom=4;" vertex="1" parent="1">
+          <mxGeometry x="160" y="200" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="backend" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Middleware &amp;amp; API Core&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Django 6.0&lt;/li&gt;&lt;li&gt;Django REST Framework&lt;/li&gt;&lt;li&gt;VAPT Sec. Middleware&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=center;verticalAlign=top;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;spacingTop=4;spacingBottom=4;" vertex="1" parent="1">
+          <mxGeometry x="420" y="200" width="190" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="database" value="&lt;b&gt;Database Structure&lt;/b&gt;&lt;hr&gt;MySQL (Production)&lt;br&gt;SQLite (Dev)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="455" y="30" width="120" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- AI Pipeline Container -->
+        <mxCell id="pipeline_group" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Core AI Pipeline Execution&lt;/b&gt;" style="swimlane;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;startSize=40;" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="450" height="420" as="geometry" />
+        </mxCell>
+
+        <!-- Pipeline Steps -->
+        <mxCell id="ner" value="&lt;b&gt;1. Named Entity Extraction&lt;/b&gt;&lt;hr&gt;BioBERT NER&lt;br&gt;&lt;i&gt;(d4data/biomedical-ner)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="pipeline_group">
+          <mxGeometry x="40" y="70" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rag" value="&lt;b&gt;2. Vector GraphRAG&lt;/b&gt;&lt;hr&gt;sentence-transformers&lt;br&gt;&lt;i&gt;(all-MiniLM-L6-v2)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="pipeline_group">
+          <mxGeometry x="40" y="190" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="kb" value="&lt;b&gt;Clinical Ontology KB&lt;/b&gt;&lt;hr&gt;120+ Diseases&lt;br&gt;JSON Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="pipeline_group">
+          <mxGeometry x="300" y="175" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="llm" value="&lt;b&gt;3. Clinical LLM Engine&lt;/b&gt;&lt;hr&gt;Med42 Health&lt;br&gt;&lt;i&gt;(Llama3-Med42-8B)&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="pipeline_group">
+          <mxGeometry x="40" y="310" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Logging Storage -->
+        <mxCell id="logs" value="&lt;b&gt;Application Logs&lt;/b&gt;&lt;hr&gt;application_errors.log" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;size=15;" vertex="1" parent="1">
+          <mxGeometry x="455" y="420" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- Connectors -->
+        <!-- User to Frontend -->
+        <mxCell id="edge_user_front" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontStyle=1" edge="1" parent="1" source="user" target="frontend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Frontend to Backend -->
+        <mxCell id="edge_front_back" value="Axios REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontStyle=1" edge="1" parent="1" source="frontend" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Backend to DB -->
+        <mxCell id="edge_back_db_read" value="ORM Read/Write" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=classic;endFill=1;startArrow=classic;startFill=1;fontStyle=1" edge="1" parent="1" source="database" target="backend">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Backend to Logs -->
+        <mxCell id="edge_back_logs" value="Exception Logging" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;fontStyle=1" edge="1" parent="1" source="backend" target="logs">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Backend to NER -->
+        <mxCell id="edge_back_ner" value="Raw Discharge Summary" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1;strokeColor=#b85450;" edge="1" parent="1" source="backend" target="ner">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="270" />
+              <mxPoint x="660" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- NER to RAG -->
+        <mxCell id="edge_ner_rag" value="Symptoms &amp;amp; Diseases" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontStyle=1" edge="1" parent="pipeline_group" source="ner" target="rag">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- RAG to KB (Query) -->
+        <mxCell id="edge_rag_kb" value="Cosine Similarity" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1" edge="1" parent="pipeline_group" source="rag" target="kb">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- KB to RAG (Response) -->
+        <mxCell id="edge_kb_rag" value="Context Rules" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0;exitY=0.75;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontStyle=1" edge="1" parent="pipeline_group" source="kb" target="rag">
+          <mxGeometry x="0.0031" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+
+        <!-- RAG to LLM -->
+        <mxCell id="edge_rag_llm" value="Enriched Context" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;fontStyle=1" edge="1" parent="pipeline_group" source="rag" target="llm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- LLM to Backend -->
+        <mxCell id="edge_llm_back" value="Structured Diagnosis &amp;amp; Plan" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.8;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontStyle=1;strokeColor=#82b366;" edge="1" parent="1" source="llm" target="backend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="560" />
+              <mxPoint x="572" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
