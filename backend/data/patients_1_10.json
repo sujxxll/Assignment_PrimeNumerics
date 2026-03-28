@@ -1,0 +1,182 @@
+[
+  {
+    "patient_id": "PT001", "first_name": "John", "last_name": "Mitchell", "age": 67, "gender": "M",
+    "admission_date": "2025-11-01", "discharge_date": "2025-11-08", "department": "Cardiology",
+    "attending_physician": "Dr. Sarah Chen",
+    "summary": {
+      "chief_complaint": "Chest pain radiating to left arm with shortness of breath for 3 hours",
+      "history_of_present_illness": "67-year-old male presented with acute onset substernal chest pain radiating to the left arm, associated with diaphoresis and dyspnea. Pain rated 8/10. ECG showed ST-elevation in leads II, III, aVF consistent with inferior STEMI.",
+      "past_medical_history": "Hypertension x 15 years, Type 2 Diabetes Mellitus x 10 years, Hyperlipidemia, Former smoker (30 pack-years, quit 5 years ago)",
+      "medications_on_admission": "Metformin 1000mg BID, Lisinopril 20mg daily, Atorvastatin 40mg daily",
+      "physical_examination": "BP 160/95 mmHg, HR 102 bpm, RR 22, SpO2 94% on RA. Diaphoretic, JVD present. S3 gallop noted. Bilateral basilar crackles.",
+      "lab_results": "Troponin I: 12.5 ng/mL (elevated), BNP: 890 pg/mL, Creatinine: 1.4, HbA1c: 7.8%, LDL: 145 mg/dL, Total cholesterol: 240 mg/dL",
+      "imaging_results": "Echocardiogram: EF 35%, inferior wall hypokinesis. Coronary angiography: 95% occlusion of RCA, 70% stenosis of LAD.",
+      "hospital_course": "Patient underwent emergent PCI with drug-eluting stent placement to RCA. Post-procedure course complicated by transient hypotension managed with IV fluids. Started on dual antiplatelet therapy. Cardiac rehabilitation initiated. Heart failure management optimized.",
+      "discharge_diagnosis": "Acute inferior STEMI, Systolic heart failure (EF 35%), CAD - multivessel disease",
+      "discharge_medications": "Aspirin 81mg daily, Clopidogrel 75mg daily, Metoprolol succinate 50mg daily, Lisinopril 10mg daily, Atorvastatin 80mg daily, Metformin 1000mg BID, Furosemide 40mg daily",
+      "follow_up_instructions": "Cardiology follow-up in 1 week. Cardiac rehab 3x/week. Low sodium diet. Daily weight monitoring."
+    }
+  },
+  {
+    "patient_id": "PT002", "first_name": "Maria", "last_name": "Garcia", "age": 54, "gender": "F",
+    "admission_date": "2025-11-03", "discharge_date": "2025-11-09", "department": "Pulmonology",
+    "attending_physician": "Dr. James Wilson",
+    "summary": {
+      "chief_complaint": "Progressive dyspnea and productive cough with blood-tinged sputum for 2 weeks",
+      "history_of_present_illness": "54-year-old female with 30 pack-year smoking history presenting with worsening shortness of breath, productive cough with hemoptysis, and 15-pound unintentional weight loss over 3 months. CT chest revealed a 4.5cm spiculated mass in the right upper lobe with mediastinal lymphadenopathy.",
+      "past_medical_history": "COPD, Hypertension, Osteoarthritis",
+      "medications_on_admission": "Tiotropium 18mcg daily, Albuterol PRN, Amlodipine 10mg daily, Ibuprofen 400mg PRN",
+      "physical_examination": "BP 138/82, HR 88, RR 24, SpO2 91% on RA. Decreased breath sounds RUL with dullness to percussion. Digital clubbing present. Cervical lymphadenopathy palpable.",
+      "lab_results": "CBC: WBC 11.2, Hgb 10.8, Platelets 445K. CEA: 28.5 ng/mL. LDH: 340 U/L. Calcium: 11.2 mg/dL. PFTs: FEV1 58% predicted.",
+      "imaging_results": "CT Chest: 4.5cm spiculated mass RUL with mediastinal and hilar lymphadenopathy. PET-CT: Hypermetabolic uptake in primary mass (SUV 12.3) and mediastinal nodes. Brain MRI: No metastases.",
+      "hospital_course": "CT-guided biopsy performed - pathology confirmed non-small cell lung cancer (adenocarcinoma). EGFR mutation positive (exon 19 deletion). Staging: IIIA (T2bN2M0). Multidisciplinary tumor board recommended targeted therapy with concurrent radiation. Pulmonary function optimized. Smoking cessation counseling provided.",
+      "discharge_diagnosis": "Non-small cell lung cancer (adenocarcinoma), Stage IIIA, EGFR mutation positive. COPD exacerbation.",
+      "discharge_medications": "Erlotinib 150mg daily, Tiotropium 18mcg daily, Prednisone 40mg taper, Ondansetron 8mg PRN, Amlodipine 10mg daily",
+      "follow_up_instructions": "Oncology follow-up in 1 week. Radiation oncology consult. Repeat CT in 6 weeks. Report any new symptoms immediately."
+    }
+  },
+  {
+    "patient_id": "PT003", "first_name": "Robert", "last_name": "Johnson", "age": 72, "gender": "M",
+    "admission_date": "2025-11-05", "discharge_date": "2025-11-12", "department": "Neurology",
+    "attending_physician": "Dr. Emily Park",
+    "summary": {
+      "chief_complaint": "Sudden onset right-sided weakness and slurred speech for 2 hours",
+      "history_of_present_illness": "72-year-old male brought by EMS with acute onset right hemiparesis and dysarthria. Last known well 2 hours prior. NIHSS score 14 on arrival. CT head negative for hemorrhage. CT angiography showed left MCA M1 occlusion.",
+      "past_medical_history": "Atrial fibrillation (not on anticoagulation), Hypertension, Type 2 DM, prior TIA 2 years ago",
+      "medications_on_admission": "Aspirin 81mg daily, Metoprolol 50mg BID, Metformin 500mg BID, Amlodipine 5mg daily",
+      "physical_examination": "BP 178/96, HR 88 irregular, RR 18. Right facial droop, right arm 1/5 strength, right leg 3/5 strength. Dysarthria present. Left gaze preference.",
+      "lab_results": "INR 1.0, Glucose 185 mg/dL, Creatinine 1.1, Troponin negative. HbA1c 8.2%",
+      "imaging_results": "CT Head: No acute hemorrhage. CTA: Left MCA M1 occlusion. MRI Brain (post-procedure): Left MCA territory infarct involving left frontal and parietal lobes.",
+      "hospital_course": "IV tPA administered within window followed by mechanical thrombectomy with successful recanalization (TICI 3). Post-procedure NIHSS improved to 6. Started on anticoagulation for atrial fibrillation. Speech therapy, PT, OT initiated. Swallow evaluation passed.",
+      "discharge_diagnosis": "Acute ischemic stroke - left MCA territory, Atrial fibrillation, Uncontrolled Type 2 DM",
+      "discharge_medications": "Apixaban 5mg BID, Metoprolol 50mg BID, Atorvastatin 80mg daily, Metformin 1000mg BID, Amlodipine 5mg daily",
+      "follow_up_instructions": "Neurology follow-up 2 weeks. Continue PT/OT/Speech therapy. Stroke support group referral. Diabetic diet counseling."
+    }
+  },
+  {
+    "patient_id": "PT004", "first_name": "Linda", "last_name": "Williams", "age": 45, "gender": "F",
+    "admission_date": "2025-11-07", "discharge_date": "2025-11-11", "department": "Gastroenterology",
+    "attending_physician": "Dr. Michael Torres",
+    "summary": {
+      "chief_complaint": "Severe epigastric pain, nausea, vomiting, and jaundice for 24 hours",
+      "history_of_present_illness": "45-year-old female presenting with acute onset severe epigastric pain radiating to the back, associated with nausea, vomiting, and new-onset jaundice. Pain worsened after a fatty meal. History of gallstones diagnosed 2 years ago but declined surgery.",
+      "past_medical_history": "Cholelithiasis, Obesity (BMI 34), GERD, Depression",
+      "medications_on_admission": "Omeprazole 20mg daily, Sertraline 100mg daily",
+      "physical_examination": "BP 110/70, HR 110, RR 20, Temp 38.5°C. Icteric sclera. Tender epigastrium with guarding. Murphy sign positive. Hypoactive bowel sounds.",
+      "lab_results": "Lipase: 2450 U/L, Amylase: 1800 U/L, Total bilirubin: 5.8 mg/dL, Direct bilirubin: 4.2 mg/dL, ALT: 340 U/L, AST: 280 U/L, ALP: 450 U/L, WBC: 14.5K",
+      "imaging_results": "RUQ Ultrasound: Multiple gallstones with dilated CBD (12mm). MRCP: CBD stone with upstream dilation. CT abdomen: Pancreatic edema consistent with acute pancreatitis, Balthazar grade C.",
+      "hospital_course": "NPO with aggressive IV fluid resuscitation. ERCP performed with stone extraction and sphincterotomy. Pain managed with IV hydromorphone. Diet gradually advanced. Laparoscopic cholecystectomy performed on day 3 without complications. Tolerated regular diet post-surgery.",
+      "discharge_diagnosis": "Acute gallstone pancreatitis, Choledocholithiasis, Acute cholecystitis",
+      "discharge_medications": "Omeprazole 40mg daily, Acetaminophen 500mg Q6H PRN, Sertraline 100mg daily, Ondansetron 4mg PRN",
+      "follow_up_instructions": "Surgery follow-up 2 weeks. Low-fat diet for 4 weeks. Return if fever, worsening pain, or persistent nausea."
+    }
+  },
+  {
+    "patient_id": "PT005", "first_name": "James", "last_name": "Brown", "age": 58, "gender": "M",
+    "admission_date": "2025-11-08", "discharge_date": "2025-11-15", "department": "Nephrology",
+    "attending_physician": "Dr. Lisa Patel",
+    "summary": {
+      "chief_complaint": "Progressive bilateral leg swelling, decreased urine output, and fatigue for 1 week",
+      "history_of_present_illness": "58-year-old male with known CKD Stage 3b presenting with worsening bilateral lower extremity edema, oliguria, and fatigue. Reports foamy urine for past month. Weight gain of 20 lbs in 2 weeks.",
+      "past_medical_history": "CKD Stage 3b (baseline Cr 2.2), Type 2 DM x 20 years, Hypertension, Diabetic retinopathy",
+      "medications_on_admission": "Insulin glargine 30 units nightly, Insulin lispro sliding scale, Losartan 100mg daily, Furosemide 40mg daily, Sodium bicarbonate 650mg TID",
+      "physical_examination": "BP 168/102, HR 92, RR 22. 3+ bilateral pitting edema to knees. Periorbital edema. Bilateral basilar crackles. Distended abdomen with shifting dullness.",
+      "lab_results": "Creatinine: 5.8 mg/dL (baseline 2.2), BUN: 78, GFR: 9 mL/min, K: 6.1 mEq/L, Bicarb: 14, Phosphorus: 7.2, Albumin: 2.1, Urine protein/creatinine ratio: 8.5 g/g, Hemoglobin: 8.5",
+      "imaging_results": "Renal ultrasound: Bilateral small echogenic kidneys (8.5cm bilateral). No hydronephrosis. Chest X-ray: Bilateral pleural effusions with pulmonary congestion.",
+      "hospital_course": "Emergent hemodialysis initiated for hyperkalemia and volume overload. Nephrotic-range proteinuria evaluated - renal biopsy showed diabetic nephropathy with FSGS overlap. Initiated on IV diuretics with improvement. AV fistula creation planned. Erythropoietin started for renal anemia. Dietary counseling provided.",
+      "discharge_diagnosis": "End-stage renal disease (CKD Stage 5), Diabetic nephropathy with FSGS, Hyperkalemia, Volume overload, Renal anemia",
+      "discharge_medications": "Insulin glargine 25 units nightly, Furosemide 80mg BID, Sevelamer 800mg TID with meals, Epoetin alfa 10000 units weekly, Sodium bicarbonate 1300mg TID, Amlodipine 10mg daily",
+      "follow_up_instructions": "Nephrology 1 week. Hemodialysis MWF schedule. AV fistula surgery consult. Renal dietitian appointment. Fluid restriction 1.5L/day."
+    }
+  },
+  {
+    "patient_id": "PT006", "first_name": "Patricia", "last_name": "Davis", "age": 38, "gender": "F",
+    "admission_date": "2025-11-10", "discharge_date": "2025-11-14", "department": "Rheumatology",
+    "attending_physician": "Dr. David Kim",
+    "summary": {
+      "chief_complaint": "Severe joint pain, butterfly facial rash, and fever for 5 days",
+      "history_of_present_illness": "38-year-old female presenting with polyarthralgia involving hands, wrists, and knees, new malar rash, fever (39.2°C), oral ulcers, and hair loss for the past month. Reports pleuritic chest pain for 3 days.",
+      "past_medical_history": "No significant PMH. Family history: Mother with SLE",
+      "medications_on_admission": "Ibuprofen 600mg TID PRN",
+      "physical_examination": "BP 128/78, HR 96, Temp 39.2°C. Malar butterfly rash. Oral ulcers on hard palate. Synovitis of MCPs and wrists bilaterally. Alopecia. Decreased breath sounds at left base. No hepatosplenomegaly.",
+      "lab_results": "ANA: 1:1280 homogeneous, Anti-dsDNA: 280 IU/mL (elevated), Anti-Smith: positive, C3: 42 (low), C4: 6 (low), ESR: 88, CRP: 4.2, WBC: 2.8K, Platelets: 95K, Creatinine: 1.4, Urine: 2+ protein with RBC casts",
+      "imaging_results": "Chest X-ray: Left pleural effusion. Echocardiogram: Small pericardial effusion. Renal ultrasound: Normal-sized kidneys. Hand X-rays: Periarticular osteopenia, no erosions.",
+      "hospital_course": "Diagnosed with SLE with renal, hematologic, and serosal involvement. Renal biopsy performed: Class IV lupus nephritis. Started on pulse IV methylprednisolone 1g x 3 days followed by oral prednisone taper. Mycophenolate mofetil initiated. Hydroxychloroquine started. Pleural effusion managed conservatively.",
+      "discharge_diagnosis": "Systemic Lupus Erythematosus with Class IV Lupus Nephritis, Lupus serositis, Lupus-related cytopenias",
+      "discharge_medications": "Prednisone 60mg daily (taper schedule), Mycophenolate mofetil 1000mg BID, Hydroxychloroquine 200mg BID, Calcium/Vitamin D, Omeprazole 20mg daily",
+      "follow_up_instructions": "Rheumatology 2 weeks. Nephrology 2 weeks. Monthly CBC and chemistry. Ophthalmology baseline for hydroxychloroquine. Sun protection."
+    }
+  },
+  {
+    "patient_id": "PT007", "first_name": "William", "last_name": "Martinez", "age": 63, "gender": "M",
+    "admission_date": "2025-11-11", "discharge_date": "2025-11-16", "department": "Endocrinology",
+    "attending_physician": "Dr. Angela Ross",
+    "summary": {
+      "chief_complaint": "Confusion, extreme thirst, and frequent urination for 2 days",
+      "history_of_present_illness": "63-year-old male brought by family with altered mental status, polyuria, and polydipsia. Blood glucose on arrival: 845 mg/dL. Recently diagnosed with Type 2 DM but non-compliant with medications. Reports recent URI symptoms.",
+      "past_medical_history": "Newly diagnosed Type 2 DM (3 months ago), Hypertension, Obesity (BMI 38)",
+      "medications_on_admission": "Metformin 500mg BID (not taking), Lisinopril 10mg daily",
+      "physical_examination": "BP 98/60, HR 118, RR 24, Temp 37.8°C. Obtunded. Severely dehydrated with dry mucous membranes. Tachycardic. Kussmaul breathing absent. Neurological: Opens eyes to stimulation, confused speech.",
+      "lab_results": "Glucose: 845 mg/dL, Sodium: 128 mEq/L (corrected 142), Osmolality: 385 mOsm/kg, pH: 7.32, BUN: 52, Creatinine: 2.8, HbA1c: 13.2%, Ketones: trace, WBC: 16.2K",
+      "imaging_results": "CT Head: No acute intracranial pathology. Chest X-ray: RLL infiltrate suggesting pneumonia.",
+      "hospital_course": "Diagnosed with Hyperosmolar Hyperglycemic State (HHS) precipitated by community-acquired pneumonia. Aggressive IV fluid resuscitation with NS then half-NS. Insulin drip initiated with careful glucose monitoring. Transitioned to subcutaneous insulin. Pneumonia treated with ceftriaxone and azithromycin. Mental status normalized by day 3. Diabetes education provided.",
+      "discharge_diagnosis": "Hyperosmolar Hyperglycemic State, Community-acquired pneumonia, Uncontrolled Type 2 DM, Acute kidney injury (resolved)",
+      "discharge_medications": "Insulin glargine 30 units nightly, Insulin lispro with meals per sliding scale, Metformin 1000mg BID, Amoxicillin-clavulanate 875mg BID x 5 days, Lisinopril 10mg daily",
+      "follow_up_instructions": "Endocrinology 1 week. PCP 2 weeks. Diabetes self-management education. Glucometer and testing supplies prescribed. Report glucose >300 or <70 immediately."
+    }
+  },
+  {
+    "patient_id": "PT008", "first_name": "Elizabeth", "last_name": "Anderson", "age": 71, "gender": "F",
+    "admission_date": "2025-11-12", "discharge_date": "2025-11-19", "department": "Orthopedics",
+    "attending_physician": "Dr. Richard Huang",
+    "summary": {
+      "chief_complaint": "Right hip pain and inability to walk after a fall at home",
+      "history_of_present_illness": "71-year-old female with osteoporosis presenting after mechanical fall at home. Unable to bear weight on right leg. Reports increasing falls over past 6 months. No LOC, no head trauma.",
+      "past_medical_history": "Osteoporosis (T-score -3.2), Hypertension, Hypothyroidism, Vitamin D deficiency, History of vertebral compression fracture",
+      "medications_on_admission": "Alendronate 70mg weekly, Levothyroxine 75mcg daily, Lisinopril 20mg daily, Vitamin D3 2000 IU daily, Calcium 600mg BID",
+      "physical_examination": "BP 142/88, HR 92. Right lower extremity shortened and externally rotated. Tenderness over right greater trochanter. Unable to perform straight leg raise. No neurovascular compromise distally.",
+      "lab_results": "Hemoglobin: 10.2, Calcium: 8.8, Vitamin D: 18 ng/mL (low), Albumin: 3.2, PT/INR normal, TSH: 4.2",
+      "imaging_results": "X-ray right hip: Displaced intracapsular femoral neck fracture (Garden type III). DEXA: T-score -3.2 femoral neck, -2.8 lumbar spine.",
+      "hospital_course": "Right hip hemiarthroplasty performed on day 1. Post-op course uncomplicated. Started DVT prophylaxis with enoxaparin. Physical therapy initiated post-op day 1. Transitioned to walker ambulation. Fall prevention assessment completed. Osteoporosis management optimized - switched from alendronate to denosumab given fracture on bisphosphonate.",
+      "discharge_diagnosis": "Right femoral neck fracture (Garden III), Severe osteoporosis with pathologic fracture, Vitamin D deficiency",
+      "discharge_medications": "Denosumab 60mg SC every 6 months (next due 5/2026), Levothyroxine 75mcg daily, Lisinopril 20mg daily, Vitamin D3 5000 IU daily, Calcium 600mg BID, Enoxaparin 40mg SC daily x 28 days, Acetaminophen 1000mg Q8H",
+      "follow_up_instructions": "Orthopedics 2 weeks. Home PT 3x/week. Fall prevention program. Endocrinology for osteoporosis management. No weight restrictions."
+    }
+  },
+  {
+    "patient_id": "PT009", "first_name": "David", "last_name": "Thompson", "age": 49, "gender": "M",
+    "admission_date": "2025-11-13", "discharge_date": "2025-11-17", "department": "Hepatology",
+    "attending_physician": "Dr. Karen Wright",
+    "summary": {
+      "chief_complaint": "Abdominal distension, yellow eyes, and confusion for 3 days",
+      "history_of_present_illness": "49-year-old male with history of alcohol use disorder presenting with progressive abdominal distension, jaundice, and hepatic encephalopathy. Reports drinking 1 pint of vodka daily for 20 years. Last drink 2 days ago. Family reports progressive confusion and personality changes.",
+      "past_medical_history": "Alcohol use disorder, Alcohol-related liver disease, Esophageal varices (banded 6 months ago), Prior SBP",
+      "medications_on_admission": "Lactulose 30mL TID (non-compliant), Rifaximin 550mg BID (not taking), Propranolol 20mg BID, Spironolactone 100mg daily, Furosemide 40mg daily",
+      "physical_examination": "BP 102/58, HR 98, Temp 37.9°C. Icteric, confused with asterixis. Spider angiomata on chest. Abdominal distension with shifting dullness, tense ascites. Caput medusae. Bilateral pedal edema 2+. Palmer erythema.",
+      "lab_results": "Total bilirubin: 8.4, INR: 2.1, Albumin: 2.0, Creatinine: 1.8, Sodium: 126, AST: 180, ALT: 85, ALP: 220, Platelets: 62K, Ammonia: 145 umol/L. MELD score: 28",
+      "imaging_results": "CT Abdomen: Cirrhotic liver with large volume ascites. Patent portal vein. Splenomegaly. No HCC on triphasic CT.",
+      "hospital_course": "Large volume paracentesis performed (6L), albumin replacement given. Ascitic fluid: WBC 450 with 75% PMNs - started on ceftriaxone for SBP. Hepatic encephalopathy managed with lactulose and rifaximin. Alcohol withdrawal prophylaxis with CIWA protocol. Social work and addiction medicine consultation. Evaluated for liver transplant - MELD 28. Nutrition optimized.",
+      "discharge_diagnosis": "Decompensated alcoholic cirrhosis, Spontaneous bacterial peritonitis, Hepatic encephalopathy grade II, Tense ascites, Alcohol use disorder",
+      "discharge_medications": "Lactulose 30mL TID (titrate to 3-4 BM/day), Rifaximin 550mg BID, Spironolactone 200mg daily, Furosemide 80mg daily, Ciprofloxacin 500mg daily (SBP prophylaxis), Propranolol 20mg BID, Thiamine 100mg daily, Folic acid 1mg daily",
+      "follow_up_instructions": "Hepatology 1 week. Transplant evaluation appointment. Alcohol rehab program enrollment. Daily weights, 2g sodium restriction, 1.5L fluid restriction. Return if fever, confusion, or increasing abdominal girth."
+    }
+  },
+  {
+    "patient_id": "PT010", "first_name": "Susan", "last_name": "Taylor", "age": 32, "gender": "F",
+    "admission_date": "2025-11-14", "discharge_date": "2025-11-18", "department": "Hematology",
+    "attending_physician": "Dr. Robert Lee",
+    "summary": {
+      "chief_complaint": "Easy bruising, heavy menstrual bleeding, and petechiae for 2 weeks",
+      "history_of_present_illness": "32-year-old female presenting with spontaneous bruising, petechiae on lower extremities, gum bleeding after brushing, and menorrhagia. Reports recent viral URI 3 weeks ago. No family history of bleeding disorders.",
+      "past_medical_history": "No significant PMH",
+      "medications_on_admission": "None. Denies NSAIDs or anticoagulant use.",
+      "physical_examination": "BP 118/72, HR 88. Multiple petechiae on bilateral lower extremities and trunk. Ecchymoses on arms. Gum oozing. No hepatosplenomegaly. No lymphadenopathy.",
+      "lab_results": "CBC: WBC 7.2K (normal diff), Hgb 9.8 (was 13.5 last year), Platelets: 8K (critically low). Peripheral smear: Large platelets, no schistocytes, no blasts. PT/INR normal. Fibrinogen normal. Reticulocyte count elevated. Direct Coombs: negative. HIV, HCV, HBV: negative. ANA: negative.",
+      "imaging_results": "CT CAP: No lymphadenopathy, no splenomegaly. Normal bone marrow appearance.",
+      "hospital_course": "Diagnosed with immune thrombocytopenic purpura (ITP) - likely post-viral. Admitted for platelet count <10K with active bleeding. Started IV dexamethasone 40mg daily x 4 days. Single dose of IVIG 1g/kg given for rapid response. Platelet count improved to 45K by day 3 and 82K by day 4. Menorrhagia controlled with tranexamic acid. Bone marrow biopsy showed megakaryocytic hyperplasia consistent with ITP.",
+      "discharge_diagnosis": "Immune thrombocytopenic purpura (ITP), Iron deficiency anemia secondary to blood loss",
+      "discharge_medications": "Prednisone 60mg daily (taper over 4 weeks), Tranexamic acid 1300mg TID during menses, Ferrous sulfate 325mg daily, Omeprazole 20mg daily",
+      "follow_up_instructions": "Hematology 1 week with CBC. Avoid contact sports and NSAIDs. Report any new bleeding, petechiae, or headache immediately. May need second-line therapy if relapse."
+    }
+  }
+]

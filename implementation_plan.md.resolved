@@ -1,0 +1,124 @@
+# Healthcare AI System - Implementation Plan
+
+## Architecture Overview
+
+```mermaid
+graph TB
+    subgraph Frontend["Frontend (Next.js + Material UI)"]
+        UI[Dashboard UI]
+        PL[Patient List]
+        DS[Discharge Summary Input]
+        DR[Diagnosis Results]
+        TP[Treatment Plans]
+    end
+
+    subgraph Backend["Backend (Django REST)"]
+        API[REST API Layer]
+        PM[Patient Manager]
+        RAG[RAG Pipeline]
+        GR[GraphRAG Engine]
+        BE[BERT Engine]
+        LLM[LLM Engine]
+    end
+
+    subgraph Models["AI Models"]
+        BB[BioBERT / PubMedBERT]
+        DS1[DeepSeek R1]
+        M42[Med42]
+        PML[PMC LLaMA]
+    end
+
+    subgraph Database["MySQL Database"]
+        PT[Patients Table]
+        DT[Diagnoses Table]
+        TT[Treatments Table]
+        KG[Knowledge Graph Store]
+    end
+
+    UI --> API
+    API --> PM --> PT
+    API --> RAG
+    RAG --> GR --> KG
+    RAG --> BE --> BB
+    RAG --> LLM --> DS1
+    LLM --> M42
+    LLM --> PML
+    GR --> BE
+    BE --> LLM
+    LLM --> DT
+    LLM --> TT
+```
+
+## Pipeline Flow
+
+```
+Discharge Summary → BioBERT NER → Entity Extraction → GraphRAG Knowledge Graph
+                                                            ↓
+                                                    Context Retrieval
+                                                            ↓
+                                            LLM Ensemble (DeepSeek + Med42 + PMC LLaMA)
+                                                            ↓
+                                                    Diagnosis + Treatment Plan
+```
+
+## Technology Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | Next.js 14, React, Material UI 5 |
+| Backend | Django 5, Django REST Framework |
+| Database | MySQL 8 |
+| BERT Models | BioBERT, PubMedBERT |
+| LLMs | DeepSeek R1, Med42, PMC LLaMA |
+| RAG | Custom GraphRAG implementation |
+| Knowledge Graph | NetworkX + Medical Ontologies |
+
+## Project Structure
+
+```
+e:\Assignment\
+├── backend/                    # Django Backend
+│   ├── manage.py
+│   ├── requirements.txt
+│   ├── config/                 # Django settings
+│   ├── api/                    # REST API endpoints
+│   ├── patients/               # Patient management
+│   ├── diagnosis_engine/       # Diagnosis pipeline
+│   ├── rag_engine/             # RAG + GraphRAG
+│   ├── bert_engine/            # BERT model integration
+│   ├── llm_engine/             # LLM integration
+│   └── data/                   # Sample discharge summaries
+├── frontend/                   # Next.js Frontend
+│   ├── src/
+│   │   ├── app/
+│   │   ├── components/
+│   │   ├── services/
+│   │   └── theme/
+│   └── package.json
+└── README.md
+```
+
+## Implementation Phases
+
+### Phase 1: Backend Setup
+- Django project configuration
+- MySQL database models
+- 30 patient discharge summaries
+- REST API endpoints
+
+### Phase 2: AI Pipeline
+- BioBERT/PubMedBERT entity extraction
+- GraphRAG knowledge graph construction
+- LLM integration layer (DeepSeek R1, Med42, PMC LLaMA)
+- RAG pipeline orchestration
+
+### Phase 3: Frontend
+- Next.js project setup
+- Material UI theme and components
+- Dashboard, Patient List, Diagnosis views
+- API integration
+
+### Phase 4: Integration & Demo
+- End-to-end pipeline testing
+- Performance optimization
+- Documentation

@@ -1,0 +1,2815 @@
+{
+    "metadata": {
+        "version": "2.0",
+        "description": "Comprehensive medical knowledge base for GraphRAG engine",
+        "sources": [
+            "ICD-10",
+            "SNOMED-CT",
+            "MedlinePlus",
+            "UpToDate",
+            "Harrison's Principles"
+        ],
+        "last_updated": "2026-03-27",
+        "total_diseases": 120,
+        "categories": [
+            "cardiology",
+            "pulmonology",
+            "neurology",
+            "gastroenterology",
+            "endocrinology",
+            "hematology",
+            "oncology",
+            "rheumatology",
+            "nephrology",
+            "infectious_disease",
+            "psychiatry",
+            "dermatology",
+            "orthopedics",
+            "ophthalmology",
+            "urology",
+            "pediatrics",
+            "emergency"
+        ]
+    },
+    "disease_symptoms": {
+        "myocardial infarction": [
+            "chest pain",
+            "dyspnea",
+            "diaphoresis",
+            "nausea",
+            "jaw pain",
+            "left arm pain",
+            "palpitations",
+            "anxiety",
+            "syncope",
+            "fatigue"
+        ],
+        "unstable angina": [
+            "chest pain",
+            "dyspnea",
+            "diaphoresis",
+            "nausea",
+            "exertional chest tightness"
+        ],
+        "heart failure": [
+            "dyspnea",
+            "orthopnea",
+            "edema",
+            "fatigue",
+            "weight gain",
+            "paroxysmal nocturnal dyspnea",
+            "jugular venous distension",
+            "cough",
+            "nocturia",
+            "exercise intolerance"
+        ],
+        "atrial fibrillation": [
+            "palpitations",
+            "dyspnea",
+            "fatigue",
+            "dizziness",
+            "chest pain",
+            "syncope",
+            "exercise intolerance"
+        ],
+        "aortic stenosis": [
+            "dyspnea",
+            "angina",
+            "syncope",
+            "fatigue",
+            "heart murmur",
+            "exercise intolerance"
+        ],
+        "aortic dissection": [
+            "severe chest pain",
+            "tearing back pain",
+            "hypertension",
+            "diaphoresis",
+            "syncope",
+            "pulse deficit"
+        ],
+        "infective endocarditis": [
+            "fever",
+            "heart murmur",
+            "petechiae",
+            "splinter hemorrhages",
+            "janeway lesions",
+            "osler nodes",
+            "fatigue",
+            "weight loss"
+        ],
+        "pericarditis": [
+            "sharp chest pain",
+            "pleuritic chest pain",
+            "pericardial friction rub",
+            "fever",
+            "dyspnea"
+        ],
+        "hypertensive emergency": [
+            "severe headache",
+            "chest pain",
+            "dyspnea",
+            "visual changes",
+            "altered mental status",
+            "nausea",
+            "vomiting"
+        ],
+        "deep vein thrombosis": [
+            "leg swelling",
+            "leg pain",
+            "warmth",
+            "erythema",
+            "calf tenderness"
+        ],
+        "peripheral artery disease": [
+            "claudication",
+            "leg pain with walking",
+            "rest pain",
+            "non-healing ulcers",
+            "cold extremities",
+            "weak pulses"
+        ],
+        "cardiac tamponade": [
+            "hypotension",
+            "jugular venous distension",
+            "muffled heart sounds",
+            "dyspnea",
+            "tachycardia"
+        ],
+        "pneumonia": [
+            "fever",
+            "cough",
+            "dyspnea",
+            "chest pain",
+            "sputum",
+            "pleuritic chest pain",
+            "tachypnea",
+            "rigors",
+            "malaise",
+            "hemoptysis"
+        ],
+        "COPD": [
+            "dyspnea",
+            "wheezing",
+            "cough",
+            "sputum",
+            "fatigue",
+            "barrel chest",
+            "pursed lip breathing",
+            "weight loss",
+            "exercise intolerance"
+        ],
+        "COPD exacerbation": [
+            "increased dyspnea",
+            "increased sputum",
+            "purulent sputum",
+            "wheezing",
+            "tachypnea",
+            "accessory muscle use"
+        ],
+        "asthma": [
+            "wheezing",
+            "dyspnea",
+            "cough",
+            "chest tightness",
+            "nocturnal symptoms",
+            "exercise-induced symptoms"
+        ],
+        "pulmonary embolism": [
+            "dyspnea",
+            "chest pain",
+            "tachycardia",
+            "hemoptysis",
+            "pleuritic chest pain",
+            "leg swelling",
+            "syncope",
+            "hypoxia"
+        ],
+        "pleural effusion": [
+            "dyspnea",
+            "pleuritic chest pain",
+            "decreased breath sounds",
+            "dullness to percussion",
+            "cough"
+        ],
+        "pneumothorax": [
+            "acute dyspnea",
+            "pleuritic chest pain",
+            "decreased breath sounds",
+            "tracheal deviation",
+            "hypotension"
+        ],
+        "pulmonary fibrosis": [
+            "progressive dyspnea",
+            "dry cough",
+            "clubbing",
+            "fine crackles",
+            "fatigue",
+            "weight loss"
+        ],
+        "lung cancer": [
+            "cough",
+            "hemoptysis",
+            "weight loss",
+            "chest pain",
+            "dyspnea",
+            "hoarseness",
+            "recurrent pneumonia",
+            "bone pain"
+        ],
+        "tuberculosis": [
+            "chronic cough",
+            "hemoptysis",
+            "night sweats",
+            "weight loss",
+            "fever",
+            "fatigue",
+            "lymphadenopathy"
+        ],
+        "sarcoidosis": [
+            "cough",
+            "dyspnea",
+            "fatigue",
+            "erythema nodosum",
+            "bilateral hilar lymphadenopathy",
+            "uveitis",
+            "skin lesions"
+        ],
+        "acute respiratory distress syndrome": [
+            "acute dyspnea",
+            "hypoxemia",
+            "bilateral infiltrates",
+            "tachypnea",
+            "respiratory failure"
+        ],
+        "stroke": [
+            "weakness",
+            "dysarthria",
+            "confusion",
+            "headache",
+            "vision changes",
+            "facial droop",
+            "arm drift",
+            "aphasia",
+            "ataxia",
+            "numbness"
+        ],
+        "transient ischemic attack": [
+            "transient weakness",
+            "transient numbness",
+            "transient speech difficulty",
+            "transient vision loss",
+            "dizziness"
+        ],
+        "subarachnoid hemorrhage": [
+            "thunderclap headache",
+            "worst headache of life",
+            "neck stiffness",
+            "photophobia",
+            "nausea",
+            "vomiting",
+            "altered consciousness"
+        ],
+        "meningitis": [
+            "headache",
+            "fever",
+            "neck stiffness",
+            "photophobia",
+            "confusion",
+            "nausea",
+            "vomiting",
+            "rash",
+            "kernig sign",
+            "brudzinski sign"
+        ],
+        "encephalitis": [
+            "fever",
+            "headache",
+            "altered mental status",
+            "seizures",
+            "focal neurological deficits",
+            "personality changes"
+        ],
+        "Alzheimer disease": [
+            "memory loss",
+            "confusion",
+            "personality changes",
+            "disorientation",
+            "difficulty with daily tasks",
+            "language problems",
+            "poor judgment",
+            "wandering"
+        ],
+        "Parkinson disease": [
+            "tremor",
+            "bradykinesia",
+            "rigidity",
+            "postural instability",
+            "shuffling gait",
+            "masked facies",
+            "micrographia",
+            "difficulty initiating movement"
+        ],
+        "multiple sclerosis": [
+            "vision changes",
+            "numbness",
+            "weakness",
+            "ataxia",
+            "fatigue",
+            "diplopia",
+            "spasticity",
+            "bowel dysfunction",
+            "bladder dysfunction",
+            "lhermitte sign"
+        ],
+        "epilepsy": [
+            "seizures",
+            "loss of consciousness",
+            "convulsions",
+            "aura",
+            "confusion",
+            "automatisms",
+            "tongue biting",
+            "urinary incontinence"
+        ],
+        "migraine": [
+            "severe headache",
+            "photophobia",
+            "phonophobia",
+            "nausea",
+            "vomiting",
+            "aura",
+            "visual disturbances",
+            "throbbing pain"
+        ],
+        "Guillain-Barre syndrome": [
+            "ascending weakness",
+            "areflexia",
+            "paresthesias",
+            "back pain",
+            "facial weakness",
+            "respiratory failure",
+            "autonomic dysfunction"
+        ],
+        "myasthenia gravis": [
+            "ptosis",
+            "diplopia",
+            "dysphagia",
+            "weakness",
+            "fatigable weakness",
+            "respiratory weakness",
+            "dysarthria"
+        ],
+        "trigeminal neuralgia": [
+            "severe facial pain",
+            "electric shock-like pain",
+            "triggered by touch",
+            "unilateral pain"
+        ],
+        "Bell palsy": [
+            "facial droop",
+            "inability to close eye",
+            "drooling",
+            "altered taste",
+            "ear pain"
+        ],
+        "normal pressure hydrocephalus": [
+            "gait disturbance",
+            "urinary incontinence",
+            "dementia",
+            "magnetic gait"
+        ],
+        "diabetes mellitus type 1": [
+            "polyuria",
+            "polydipsia",
+            "weight loss",
+            "fatigue",
+            "blurred vision",
+            "diabetic ketoacidosis",
+            "nausea",
+            "abdominal pain"
+        ],
+        "diabetes mellitus type 2": [
+            "polyuria",
+            "polydipsia",
+            "weight loss",
+            "fatigue",
+            "blurred vision",
+            "acanthosis nigricans",
+            "recurrent infections",
+            "slow wound healing"
+        ],
+        "diabetic ketoacidosis": [
+            "nausea",
+            "vomiting",
+            "abdominal pain",
+            "kussmaul breathing",
+            "fruity breath",
+            "altered mental status",
+            "polyuria",
+            "polydipsia",
+            "dehydration"
+        ],
+        "hyperosmolar hyperglycemic state": [
+            "severe dehydration",
+            "altered mental status",
+            "polyuria",
+            "polydipsia",
+            "seizures",
+            "focal neurological deficits"
+        ],
+        "hypothyroidism": [
+            "fatigue",
+            "weight gain",
+            "cold intolerance",
+            "constipation",
+            "dry skin",
+            "hair loss",
+            "bradycardia",
+            "depression",
+            "myxedema"
+        ],
+        "hyperthyroidism": [
+            "weight loss",
+            "heat intolerance",
+            "tremor",
+            "palpitations",
+            "anxiety",
+            "diarrhea",
+            "exophthalmos",
+            "lid lag"
+        ],
+        "Graves disease": [
+            "palpitations",
+            "tremor",
+            "weight loss",
+            "heat intolerance",
+            "proptosis",
+            "goiter",
+            "pretibial myxedema",
+            "lid retraction"
+        ],
+        "Hashimoto thyroiditis": [
+            "fatigue",
+            "weight gain",
+            "cold intolerance",
+            "goiter",
+            "constipation",
+            "depression",
+            "dry skin"
+        ],
+        "Addison disease": [
+            "fatigue",
+            "weight loss",
+            "hyperpigmentation",
+            "hypotension",
+            "salt craving",
+            "nausea",
+            "abdominal pain",
+            "muscle weakness"
+        ],
+        "Cushing syndrome": [
+            "weight gain",
+            "moon facies",
+            "buffalo hump",
+            "striae",
+            "hypertension",
+            "glucose intolerance",
+            "easy bruising",
+            "proximal weakness"
+        ],
+        "pheochromocytoma": [
+            "paroxysmal hypertension",
+            "headache",
+            "diaphoresis",
+            "palpitations",
+            "anxiety",
+            "tremor"
+        ],
+        "hyperaldosteronism": [
+            "hypertension",
+            "hypokalemia",
+            "metabolic alkalosis",
+            "muscle weakness",
+            "fatigue"
+        ],
+        "diabetes insipidus": [
+            "polyuria",
+            "polydipsia",
+            "dilute urine",
+            "dehydration",
+            "nocturia"
+        ],
+        "SIADH": [
+            "hyponatremia",
+            "confusion",
+            "nausea",
+            "headache",
+            "seizures",
+            "concentrated urine"
+        ],
+        "hypoglycemia": [
+            "diaphoresis",
+            "tremor",
+            "palpitations",
+            "anxiety",
+            "hunger",
+            "confusion",
+            "seizures",
+            "loss of consciousness"
+        ],
+        "cirrhosis": [
+            "jaundice",
+            "ascites",
+            "confusion",
+            "edema",
+            "fatigue",
+            "spider angiomata",
+            "palmar erythema",
+            "gynecomastia",
+            "variceal bleeding"
+        ],
+        "hepatitis A": [
+            "jaundice",
+            "nausea",
+            "fatigue",
+            "abdominal pain",
+            "dark urine",
+            "clay-colored stools",
+            "fever"
+        ],
+        "hepatitis B": [
+            "jaundice",
+            "nausea",
+            "fatigue",
+            "abdominal pain",
+            "dark urine",
+            "joint pain",
+            "fever",
+            "anorexia"
+        ],
+        "hepatitis C": [
+            "fatigue",
+            "jaundice",
+            "abdominal pain",
+            "nausea",
+            "dark urine",
+            "joint pain"
+        ],
+        "pancreatitis": [
+            "epigastric pain",
+            "nausea",
+            "vomiting",
+            "fever",
+            "abdominal tenderness",
+            "radiating back pain",
+            "elevated lipase"
+        ],
+        "cholecystitis": [
+            "right upper quadrant pain",
+            "nausea",
+            "vomiting",
+            "fever",
+            "murphy sign",
+            "referred shoulder pain"
+        ],
+        "choledocholithiasis": [
+            "jaundice",
+            "right upper quadrant pain",
+            "fever",
+            "dark urine",
+            "clay-colored stools"
+        ],
+        "appendicitis": [
+            "periumbilical pain",
+            "right lower quadrant pain",
+            "nausea",
+            "vomiting",
+            "fever",
+            "anorexia",
+            "rebound tenderness",
+            "mcburney point tenderness"
+        ],
+        "diverticulitis": [
+            "left lower quadrant pain",
+            "fever",
+            "nausea",
+            "change in bowel habits",
+            "abdominal tenderness"
+        ],
+        "Crohn disease": [
+            "abdominal pain",
+            "diarrhea",
+            "weight loss",
+            "fatigue",
+            "perianal disease",
+            "fistulas",
+            "fever",
+            "malnutrition"
+        ],
+        "ulcerative colitis": [
+            "bloody diarrhea",
+            "abdominal pain",
+            "weight loss",
+            "urgency",
+            "tenesmus",
+            "fever",
+            "anemia"
+        ],
+        "celiac disease": [
+            "diarrhea",
+            "bloating",
+            "weight loss",
+            "fatigue",
+            "iron deficiency anemia",
+            "dermatitis herpetiformis",
+            "abdominal pain"
+        ],
+        "peptic ulcer disease": [
+            "epigastric pain",
+            "nausea",
+            "bloating",
+            "early satiety",
+            "hematemesis",
+            "melena",
+            "weight loss"
+        ],
+        "GERD": [
+            "heartburn",
+            "regurgitation",
+            "dysphagia",
+            "chronic cough",
+            "hoarseness",
+            "chest pain"
+        ],
+        "small bowel obstruction": [
+            "abdominal pain",
+            "nausea",
+            "vomiting",
+            "distension",
+            "obstipation",
+            "high-pitched bowel sounds"
+        ],
+        "gastrointestinal bleeding": [
+            "hematemesis",
+            "melena",
+            "hematochezia",
+            "hypotension",
+            "tachycardia",
+            "fatigue",
+            "pallor"
+        ],
+        "hepatocellular carcinoma": [
+            "right upper quadrant pain",
+            "weight loss",
+            "jaundice",
+            "ascites",
+            "hepatomegaly",
+            "fatigue"
+        ],
+        "colorectal cancer": [
+            "change in bowel habits",
+            "rectal bleeding",
+            "weight loss",
+            "abdominal pain",
+            "iron deficiency anemia",
+            "fatigue"
+        ],
+        "irritable bowel syndrome": [
+            "abdominal pain",
+            "bloating",
+            "diarrhea",
+            "constipation",
+            "mucus in stool",
+            "incomplete evacuation"
+        ],
+        "lupus": [
+            "rash",
+            "joint pain",
+            "fever",
+            "fatigue",
+            "renal dysfunction",
+            "malar rash",
+            "photosensitivity",
+            "oral ulcers",
+            "serositis",
+            "hair loss"
+        ],
+        "rheumatoid arthritis": [
+            "joint pain",
+            "morning stiffness",
+            "joint swelling",
+            "fatigue",
+            "symmetric polyarthritis",
+            "rheumatoid nodules",
+            "joint deformity"
+        ],
+        "gout": [
+            "acute joint pain",
+            "swelling",
+            "erythema",
+            "podagra",
+            "tophi",
+            "fever"
+        ],
+        "ankylosing spondylitis": [
+            "low back pain",
+            "morning stiffness",
+            "sacroiliac pain",
+            "reduced spinal mobility",
+            "enthesitis",
+            "uveitis"
+        ],
+        "dermatomyositis": [
+            "weakness",
+            "rash",
+            "dysphagia",
+            "fatigue",
+            "gottron papules",
+            "heliotrope rash",
+            "proximal muscle weakness"
+        ],
+        "scleroderma": [
+            "skin thickening",
+            "raynaud phenomenon",
+            "dysphagia",
+            "digital ulcers",
+            "pulmonary fibrosis",
+            "renal crisis"
+        ],
+        "vasculitis": [
+            "fever",
+            "weight loss",
+            "fatigue",
+            "skin lesions",
+            "purpura",
+            "organ-specific symptoms",
+            "joint pain"
+        ],
+        "polymyalgia rheumatica": [
+            "bilateral shoulder pain",
+            "hip pain",
+            "morning stiffness",
+            "fatigue",
+            "low-grade fever",
+            "weight loss"
+        ],
+        "fibromyalgia": [
+            "widespread pain",
+            "fatigue",
+            "sleep disturbance",
+            "cognitive dysfunction",
+            "tenderness",
+            "anxiety",
+            "depression"
+        ],
+        "osteoarthritis": [
+            "joint pain",
+            "stiffness",
+            "crepitus",
+            "reduced range of motion",
+            "joint swelling",
+            "heberden nodes",
+            "bouchard nodes"
+        ],
+        "reactive arthritis": [
+            "joint pain",
+            "urethritis",
+            "conjunctivitis",
+            "asymmetric oligoarthritis",
+            "dactylitis",
+            "enthesitis"
+        ],
+        "AML": [
+            "fatigue",
+            "fever",
+            "bruising",
+            "bleeding",
+            "bone pain",
+            "weight loss",
+            "gingival hyperplasia",
+            "leukostasis",
+            "pallor"
+        ],
+        "ALL": [
+            "fatigue",
+            "fever",
+            "bone pain",
+            "bruising",
+            "lymphadenopathy",
+            "hepatosplenomegaly",
+            "pallor",
+            "petechiae"
+        ],
+        "CML": [
+            "fatigue",
+            "weight loss",
+            "night sweats",
+            "splenomegaly",
+            "left upper quadrant fullness",
+            "leukocytosis"
+        ],
+        "CLL": [
+            "lymphadenopathy",
+            "fatigue",
+            "recurrent infections",
+            "splenomegaly",
+            "weight loss",
+            "night sweats"
+        ],
+        "lymphoma": [
+            "painless lymphadenopathy",
+            "night sweats",
+            "weight loss",
+            "fever",
+            "fatigue",
+            "pruritus"
+        ],
+        "multiple myeloma": [
+            "bone pain",
+            "fatigue",
+            "recurrent infections",
+            "anemia",
+            "renal failure",
+            "hypercalcemia",
+            "pathologic fractures"
+        ],
+        "ITP": [
+            "bruising",
+            "petechiae",
+            "bleeding",
+            "fatigue",
+            "epistaxis",
+            "gingival bleeding",
+            "menorrhagia"
+        ],
+        "iron deficiency anemia": [
+            "fatigue",
+            "pallor",
+            "dyspnea on exertion",
+            "pica",
+            "koilonychia",
+            "glossitis",
+            "tachycardia",
+            "brittle nails"
+        ],
+        "sickle cell disease": [
+            "pain crisis",
+            "fatigue",
+            "jaundice",
+            "acute chest syndrome",
+            "priapism",
+            "stroke",
+            "splenic sequestration",
+            "dactylitis"
+        ],
+        "hemolytic anemia": [
+            "fatigue",
+            "jaundice",
+            "dark urine",
+            "pallor",
+            "splenomegaly",
+            "tachycardia"
+        ],
+        "DIC": [
+            "bleeding",
+            "petechiae",
+            "purpura",
+            "organ failure",
+            "thrombosis",
+            "oozing from IV sites"
+        ],
+        "TTP": [
+            "thrombocytopenia",
+            "microangiopathic hemolytic anemia",
+            "fever",
+            "renal failure",
+            "neurological symptoms"
+        ],
+        "polycythemia vera": [
+            "headache",
+            "dizziness",
+            "pruritus after bathing",
+            "erythromelalgia",
+            "splenomegaly",
+            "facial plethora"
+        ],
+        "hemophilia": [
+            "prolonged bleeding",
+            "hemarthrosis",
+            "easy bruising",
+            "deep tissue hematomas",
+            "hematuria"
+        ],
+        "von Willebrand disease": [
+            "mucocutaneous bleeding",
+            "epistaxis",
+            "menorrhagia",
+            "easy bruising",
+            "gingival bleeding"
+        ],
+        "acute kidney injury": [
+            "oliguria",
+            "edema",
+            "nausea",
+            "fatigue",
+            "confusion",
+            "elevated creatinine",
+            "hyperkalemia"
+        ],
+        "chronic kidney disease": [
+            "fatigue",
+            "edema",
+            "nausea",
+            "anorexia",
+            "pruritus",
+            "nocturia",
+            "hypertension",
+            "anemia"
+        ],
+        "nephrotic syndrome": [
+            "edema",
+            "proteinuria",
+            "hypoalbuminemia",
+            "hyperlipidemia",
+            "frothy urine",
+            "weight gain"
+        ],
+        "nephritic syndrome": [
+            "hematuria",
+            "hypertension",
+            "edema",
+            "proteinuria",
+            "oliguria",
+            "red blood cell casts"
+        ],
+        "urinary tract infection": [
+            "dysuria",
+            "frequency",
+            "urgency",
+            "suprapubic pain",
+            "hematuria",
+            "malodorous urine"
+        ],
+        "pyelonephritis": [
+            "flank pain",
+            "fever",
+            "nausea",
+            "vomiting",
+            "dysuria",
+            "costovertebral angle tenderness"
+        ],
+        "nephrolithiasis": [
+            "severe flank pain",
+            "colicky pain",
+            "hematuria",
+            "nausea",
+            "vomiting",
+            "radiating groin pain"
+        ],
+        "renal cell carcinoma": [
+            "hematuria",
+            "flank pain",
+            "flank mass",
+            "weight loss",
+            "fever",
+            "polycythemia"
+        ],
+        "sepsis": [
+            "fever",
+            "tachycardia",
+            "hypotension",
+            "altered mental status",
+            "oliguria",
+            "tachypnea",
+            "leukocytosis",
+            "lactic acidosis"
+        ],
+        "cellulitis": [
+            "erythema",
+            "warmth",
+            "swelling",
+            "pain",
+            "fever",
+            "advancing borders"
+        ],
+        "osteomyelitis": [
+            "bone pain",
+            "fever",
+            "erythema",
+            "swelling",
+            "warmth",
+            "draining sinus tract"
+        ],
+        "HIV/AIDS": [
+            "weight loss",
+            "night sweats",
+            "fever",
+            "lymphadenopathy",
+            "oral thrush",
+            "opportunistic infections",
+            "fatigue",
+            "diarrhea"
+        ],
+        "COVID-19": [
+            "fever",
+            "cough",
+            "dyspnea",
+            "fatigue",
+            "myalgia",
+            "anosmia",
+            "ageusia",
+            "headache",
+            "diarrhea",
+            "sore throat"
+        ],
+        "influenza": [
+            "fever",
+            "myalgia",
+            "headache",
+            "cough",
+            "sore throat",
+            "fatigue",
+            "rhinorrhea"
+        ],
+        "malaria": [
+            "fever",
+            "chills",
+            "headache",
+            "diaphoresis",
+            "myalgia",
+            "nausea",
+            "splenomegaly",
+            "anemia"
+        ],
+        "dengue": [
+            "high fever",
+            "severe headache",
+            "retro-orbital pain",
+            "myalgia",
+            "rash",
+            "bleeding",
+            "thrombocytopenia"
+        ],
+        "major depressive disorder": [
+            "depressed mood",
+            "anhedonia",
+            "weight changes",
+            "sleep disturbance",
+            "fatigue",
+            "worthlessness",
+            "concentration difficulty",
+            "suicidal ideation"
+        ],
+        "bipolar disorder": [
+            "mood swings",
+            "mania",
+            "depression",
+            "grandiosity",
+            "decreased sleep",
+            "pressured speech",
+            "impulsivity",
+            "psychosis"
+        ],
+        "schizophrenia": [
+            "hallucinations",
+            "delusions",
+            "disorganized speech",
+            "flat affect",
+            "social withdrawal",
+            "cognitive decline",
+            "paranoia"
+        ],
+        "generalized anxiety disorder": [
+            "excessive worry",
+            "restlessness",
+            "fatigue",
+            "muscle tension",
+            "sleep disturbance",
+            "irritability",
+            "concentration difficulty"
+        ],
+        "panic disorder": [
+            "panic attacks",
+            "palpitations",
+            "diaphoresis",
+            "trembling",
+            "dyspnea",
+            "chest pain",
+            "derealization",
+            "fear of dying"
+        ],
+        "PTSD": [
+            "flashbacks",
+            "nightmares",
+            "hypervigilance",
+            "avoidance",
+            "emotional numbing",
+            "sleep disturbance",
+            "irritability",
+            "startle response"
+        ],
+        "anorexia nervosa": [
+            "severe weight loss",
+            "food restriction",
+            "body image distortion",
+            "amenorrhea",
+            "bradycardia",
+            "hypothermia",
+            "lanugo"
+        ],
+        "psoriasis": [
+            "erythematous plaques",
+            "silvery scales",
+            "pruritus",
+            "nail changes",
+            "joint pain",
+            "scalp involvement"
+        ],
+        "eczema": [
+            "pruritus",
+            "erythema",
+            "dry skin",
+            "vesicles",
+            "lichenification",
+            "excoriations"
+        ],
+        "melanoma": [
+            "asymmetric mole",
+            "irregular borders",
+            "color variation",
+            "large diameter",
+            "evolving lesion"
+        ],
+        "Stevens-Johnson syndrome": [
+            "fever",
+            "malaise",
+            "skin pain",
+            "target lesions",
+            "mucosal erosions",
+            "blistering",
+            "epidermal detachment"
+        ],
+        "osteoporosis": [
+            "fractures",
+            "loss of height",
+            "kyphosis",
+            "back pain"
+        ],
+        "spinal stenosis": [
+            "back pain",
+            "neurogenic claudication",
+            "leg weakness",
+            "numbness",
+            "improvement with flexion"
+        ],
+        "herniated disc": [
+            "back pain",
+            "radiculopathy",
+            "numbness",
+            "weakness",
+            "positive straight leg raise"
+        ],
+        "glaucoma": [
+            "gradual vision loss",
+            "halos around lights",
+            "eye pain",
+            "tunnel vision",
+            "headache"
+        ],
+        "macular degeneration": [
+            "central vision loss",
+            "distorted vision",
+            "difficulty reading",
+            "metamorphopsia"
+        ],
+        "retinal detachment": [
+            "flashes of light",
+            "floaters",
+            "curtain-like vision loss",
+            "sudden vision loss"
+        ],
+        "benign prostatic hyperplasia": [
+            "urinary frequency",
+            "nocturia",
+            "hesitancy",
+            "weak stream",
+            "incomplete emptying",
+            "dribbling"
+        ],
+        "prostate cancer": [
+            "urinary symptoms",
+            "hematuria",
+            "bone pain",
+            "weight loss",
+            "erectile dysfunction"
+        ],
+        "testicular torsion": [
+            "acute scrotal pain",
+            "nausea",
+            "vomiting",
+            "absent cremasteric reflex",
+            "scrotal swelling"
+        ]
+    },
+    "disease_treatments": {
+        "myocardial infarction": [
+            "PCI",
+            "aspirin",
+            "clopidogrel",
+            "heparin",
+            "statin",
+            "beta-blocker",
+            "ACE inhibitor",
+            "morphine",
+            "oxygen therapy",
+            "cardiac catheterization"
+        ],
+        "unstable angina": [
+            "aspirin",
+            "heparin",
+            "nitroglycerin",
+            "beta-blocker",
+            "clopidogrel",
+            "statin",
+            "risk stratification"
+        ],
+        "heart failure": [
+            "ACE inhibitor",
+            "beta-blocker",
+            "diuretic",
+            "ARNI",
+            "SGLT2 inhibitor",
+            "aldosterone antagonist",
+            "digoxin",
+            "ICD",
+            "cardiac resynchronization",
+            "fluid restriction"
+        ],
+        "atrial fibrillation": [
+            "rate control",
+            "rhythm control",
+            "anticoagulation",
+            "cardioversion",
+            "ablation",
+            "beta-blocker",
+            "calcium channel blocker",
+            "amiodarone"
+        ],
+        "aortic stenosis": [
+            "valve replacement",
+            "TAVR",
+            "medical management",
+            "diuretics",
+            "activity modification"
+        ],
+        "aortic dissection": [
+            "IV beta-blocker",
+            "IV nitroprusside",
+            "emergent surgery",
+            "blood pressure control",
+            "pain management"
+        ],
+        "infective endocarditis": [
+            "IV antibiotics",
+            "vancomycin",
+            "gentamicin",
+            "surgical valve replacement",
+            "blood cultures"
+        ],
+        "pericarditis": [
+            "NSAIDs",
+            "colchicine",
+            "corticosteroids",
+            "pericardiocentesis"
+        ],
+        "hypertensive emergency": [
+            "IV labetalol",
+            "IV nicardipine",
+            "IV nitroprusside",
+            "gradual BP reduction"
+        ],
+        "deep vein thrombosis": [
+            "anticoagulation",
+            "heparin",
+            "warfarin",
+            "DOAC",
+            "compression stockings",
+            "IVC filter"
+        ],
+        "peripheral artery disease": [
+            "exercise therapy",
+            "cilostazol",
+            "antiplatelet",
+            "statin",
+            "revascularization"
+        ],
+        "cardiac tamponade": [
+            "pericardiocentesis",
+            "IV fluids",
+            "emergent surgery"
+        ],
+        "pneumonia": [
+            "antibiotics",
+            "oxygen therapy",
+            "IV fluids",
+            "chest physiotherapy",
+            "azithromycin",
+            "ceftriaxone",
+            "levofloxacin"
+        ],
+        "COPD": [
+            "bronchodilators",
+            "corticosteroids",
+            "oxygen therapy",
+            "pulmonary rehab",
+            "antibiotics",
+            "LABA",
+            "LAMA",
+            "ICS",
+            "smoking cessation"
+        ],
+        "COPD exacerbation": [
+            "systemic corticosteroids",
+            "bronchodilators",
+            "antibiotics",
+            "oxygen therapy",
+            "non-invasive ventilation"
+        ],
+        "asthma": [
+            "inhaled corticosteroids",
+            "SABA",
+            "LABA",
+            "leukotriene modifier",
+            "biologic therapy",
+            "allergen avoidance"
+        ],
+        "pulmonary embolism": [
+            "anticoagulation",
+            "heparin",
+            "thrombolysis",
+            "embolectomy",
+            "IVC filter",
+            "warfarin",
+            "DOAC"
+        ],
+        "pleural effusion": [
+            "thoracentesis",
+            "chest tube",
+            "pleurodesis",
+            "treat underlying cause",
+            "diuretics"
+        ],
+        "pneumothorax": [
+            "chest tube",
+            "needle decompression",
+            "observation",
+            "pleurodesis"
+        ],
+        "pulmonary fibrosis": [
+            "pirfenidone",
+            "nintedanib",
+            "oxygen therapy",
+            "pulmonary rehabilitation",
+            "lung transplant evaluation"
+        ],
+        "lung cancer": [
+            "surgery",
+            "chemotherapy",
+            "radiation therapy",
+            "immunotherapy",
+            "targeted therapy",
+            "palliative care"
+        ],
+        "tuberculosis": [
+            "rifampin",
+            "isoniazid",
+            "pyrazinamide",
+            "ethambutol",
+            "DOT",
+            "6-month regimen"
+        ],
+        "sarcoidosis": [
+            "corticosteroids",
+            "methotrexate",
+            "hydroxychloroquine",
+            "observation"
+        ],
+        "acute respiratory distress syndrome": [
+            "mechanical ventilation",
+            "prone positioning",
+            "low tidal volume",
+            "PEEP",
+            "fluid management",
+            "neuromuscular blockade"
+        ],
+        "stroke": [
+            "tPA",
+            "thrombectomy",
+            "anticoagulation",
+            "antiplatelet",
+            "rehabilitation",
+            "blood pressure management",
+            "statin"
+        ],
+        "transient ischemic attack": [
+            "antiplatelet",
+            "statin",
+            "blood pressure control",
+            "carotid endarterectomy",
+            "risk factor modification"
+        ],
+        "subarachnoid hemorrhage": [
+            "surgical clipping",
+            "endovascular coiling",
+            "nimodipine",
+            "blood pressure control",
+            "EVD"
+        ],
+        "meningitis": [
+            "ceftriaxone",
+            "vancomycin",
+            "dexamethasone",
+            "IV fluids",
+            "empiric antibiotics",
+            "acyclovir"
+        ],
+        "encephalitis": [
+            "acyclovir",
+            "supportive care",
+            "seizure management",
+            "ICP management"
+        ],
+        "Alzheimer disease": [
+            "donepezil",
+            "memantine",
+            "rivastigmine",
+            "galantamine",
+            "cognitive stimulation",
+            "caregiver support",
+            "safety measures"
+        ],
+        "Parkinson disease": [
+            "levodopa/carbidopa",
+            "dopamine agonists",
+            "MAO-B inhibitors",
+            "COMT inhibitors",
+            "deep brain stimulation",
+            "physical therapy"
+        ],
+        "multiple sclerosis": [
+            "ocrelizumab",
+            "interferon",
+            "corticosteroids",
+            "physical therapy",
+            "glatiramer",
+            "natalizumab",
+            "fingolimod"
+        ],
+        "epilepsy": [
+            "levetiracetam",
+            "valproate",
+            "carbamazepine",
+            "lamotrigine",
+            "phenytoin",
+            "surgery",
+            "vagus nerve stimulation"
+        ],
+        "migraine": [
+            "triptans",
+            "NSAIDs",
+            "antiemetics",
+            "CGRP inhibitors",
+            "beta-blockers for prevention",
+            "topiramate",
+            "botox"
+        ],
+        "Guillain-Barre syndrome": [
+            "IVIG",
+            "plasmapheresis",
+            "respiratory support",
+            "physical therapy",
+            "pain management"
+        ],
+        "myasthenia gravis": [
+            "pyridostigmine",
+            "prednisone",
+            "azathioprine",
+            "IVIG",
+            "plasmapheresis",
+            "thymectomy"
+        ],
+        "diabetes mellitus type 1": [
+            "insulin",
+            "continuous glucose monitoring",
+            "insulin pump",
+            "diet management",
+            "exercise"
+        ],
+        "diabetes mellitus type 2": [
+            "metformin",
+            "SGLT2 inhibitor",
+            "GLP-1 agonist",
+            "insulin",
+            "sulfonylurea",
+            "DPP-4 inhibitor",
+            "diet modification",
+            "exercise"
+        ],
+        "diabetic ketoacidosis": [
+            "IV insulin",
+            "IV fluids",
+            "potassium replacement",
+            "bicarbonate",
+            "monitoring"
+        ],
+        "hyperosmolar hyperglycemic state": [
+            "IV fluids",
+            "IV insulin",
+            "electrolyte replacement",
+            "monitoring"
+        ],
+        "hypothyroidism": [
+            "levothyroxine",
+            "TSH monitoring",
+            "dose adjustment"
+        ],
+        "hyperthyroidism": [
+            "methimazole",
+            "propylthiouracil",
+            "radioactive iodine",
+            "thyroidectomy",
+            "beta-blocker"
+        ],
+        "Graves disease": [
+            "methimazole",
+            "propranolol",
+            "radioactive iodine",
+            "thyroidectomy",
+            "orbital decompression"
+        ],
+        "Hashimoto thyroiditis": [
+            "levothyroxine",
+            "TSH monitoring",
+            "selenium supplementation"
+        ],
+        "Addison disease": [
+            "hydrocortisone",
+            "fludrocortisone",
+            "stress dosing",
+            "medical alert bracelet"
+        ],
+        "Cushing syndrome": [
+            "surgical resection",
+            "ketoconazole",
+            "metyrapone",
+            "radiation",
+            "adrenalectomy"
+        ],
+        "pheochromocytoma": [
+            "alpha-blockade",
+            "phenoxybenzamine",
+            "beta-blockade",
+            "surgical resection"
+        ],
+        "diabetes insipidus": [
+            "desmopressin",
+            "water replacement",
+            "treating underlying cause"
+        ],
+        "SIADH": [
+            "fluid restriction",
+            "salt tablets",
+            "tolvaptan",
+            "demeclocycline",
+            "treating underlying cause"
+        ],
+        "hypoglycemia": [
+            "oral glucose",
+            "IV dextrose",
+            "glucagon",
+            "meal planning",
+            "medication adjustment"
+        ],
+        "cirrhosis": [
+            "lactulose",
+            "rifaximin",
+            "diuretics",
+            "paracentesis",
+            "transplant evaluation",
+            "beta-blocker",
+            "variceal banding",
+            "TIPS"
+        ],
+        "hepatitis A": [
+            "supportive care",
+            "rest",
+            "hydration",
+            "hepatitis A vaccine"
+        ],
+        "hepatitis B": [
+            "tenofovir",
+            "entecavir",
+            "interferon",
+            "monitoring",
+            "hepatitis B vaccine"
+        ],
+        "hepatitis C": [
+            "sofosbuvir/velpatasvir",
+            "glecaprevir/pibrentasvir",
+            "direct-acting antivirals"
+        ],
+        "pancreatitis": [
+            "NPO",
+            "IV fluids",
+            "pain management",
+            "ERCP",
+            "cholecystectomy",
+            "nutrition support"
+        ],
+        "cholecystitis": [
+            "cholecystectomy",
+            "antibiotics",
+            "IV fluids",
+            "pain management",
+            "percutaneous drainage"
+        ],
+        "choledocholithiasis": [
+            "ERCP",
+            "sphincterotomy",
+            "cholecystectomy"
+        ],
+        "appendicitis": [
+            "appendectomy",
+            "antibiotics",
+            "IV fluids",
+            "pain management"
+        ],
+        "diverticulitis": [
+            "antibiotics",
+            "bowel rest",
+            "IV fluids",
+            "surgery for complications",
+            "high-fiber diet"
+        ],
+        "Crohn disease": [
+            "mesalamine",
+            "corticosteroids",
+            "azathioprine",
+            "biologics",
+            "infliximab",
+            "adalimumab",
+            "surgical resection",
+            "nutrition support"
+        ],
+        "ulcerative colitis": [
+            "mesalamine",
+            "corticosteroids",
+            "biologics",
+            "cyclosporine",
+            "colectomy",
+            "vedolizumab",
+            "tofacitinib"
+        ],
+        "celiac disease": [
+            "gluten-free diet",
+            "nutritional supplementation",
+            "monitoring"
+        ],
+        "peptic ulcer disease": [
+            "PPI",
+            "H2 blocker",
+            "H. pylori eradication",
+            "sucralfate",
+            "avoid NSAIDs"
+        ],
+        "GERD": [
+            "PPI",
+            "H2 blocker",
+            "lifestyle modifications",
+            "fundoplication"
+        ],
+        "small bowel obstruction": [
+            "NPO",
+            "nasogastric decompression",
+            "IV fluids",
+            "surgery"
+        ],
+        "gastrointestinal bleeding": [
+            "endoscopy",
+            "IV fluids",
+            "blood transfusion",
+            "PPI",
+            "octreotide",
+            "interventional radiology"
+        ],
+        "hepatocellular carcinoma": [
+            "surgical resection",
+            "liver transplant",
+            "TACE",
+            "sorafenib",
+            "ablation"
+        ],
+        "colorectal cancer": [
+            "surgical resection",
+            "chemotherapy",
+            "radiation",
+            "targeted therapy",
+            "immunotherapy"
+        ],
+        "lupus": [
+            "hydroxychloroquine",
+            "corticosteroids",
+            "mycophenolate",
+            "cyclophosphamide",
+            "belimumab",
+            "sun protection"
+        ],
+        "rheumatoid arthritis": [
+            "methotrexate",
+            "hydroxychloroquine",
+            "sulfasalazine",
+            "biologics",
+            "NSAIDs",
+            "corticosteroids",
+            "physical therapy"
+        ],
+        "gout": [
+            "colchicine",
+            "NSAIDs",
+            "corticosteroids",
+            "allopurinol",
+            "febuxostat",
+            "dietary modification"
+        ],
+        "ankylosing spondylitis": [
+            "NSAIDs",
+            "TNF inhibitors",
+            "physical therapy",
+            "exercise",
+            "posture training"
+        ],
+        "dermatomyositis": [
+            "corticosteroids",
+            "methotrexate",
+            "azathioprine",
+            "IVIG",
+            "mycophenolate"
+        ],
+        "scleroderma": [
+            "ACE inhibitor",
+            "calcium channel blocker",
+            "immunosuppressants",
+            "PPI",
+            "physical therapy"
+        ],
+        "polymyalgia rheumatica": [
+            "low-dose corticosteroids",
+            "prednisone",
+            "gradual taper"
+        ],
+        "fibromyalgia": [
+            "duloxetine",
+            "pregabalin",
+            "amitriptyline",
+            "exercise",
+            "CBT",
+            "sleep hygiene"
+        ],
+        "osteoarthritis": [
+            "acetaminophen",
+            "NSAIDs",
+            "physical therapy",
+            "weight management",
+            "joint injection",
+            "joint replacement"
+        ],
+        "AML": [
+            "chemotherapy",
+            "cytarabine",
+            "daunorubicin",
+            "stem cell transplant",
+            "supportive care",
+            "all-trans retinoic acid"
+        ],
+        "ALL": [
+            "chemotherapy",
+            "vincristine",
+            "prednisone",
+            "asparaginase",
+            "stem cell transplant",
+            "CNS prophylaxis"
+        ],
+        "CML": [
+            "imatinib",
+            "dasatinib",
+            "nilotinib",
+            "stem cell transplant",
+            "monitoring"
+        ],
+        "CLL": [
+            "ibrutinib",
+            "venetoclax",
+            "rituximab",
+            "observation",
+            "obinutuzumab"
+        ],
+        "lymphoma": [
+            "chemotherapy",
+            "radiation",
+            "immunotherapy",
+            "rituximab",
+            "CHOP",
+            "stem cell transplant"
+        ],
+        "multiple myeloma": [
+            "bortezomib",
+            "lenalidomide",
+            "dexamethasone",
+            "stem cell transplant",
+            "bisphosphonates",
+            "daratumumab"
+        ],
+        "ITP": [
+            "corticosteroids",
+            "IVIG",
+            "rituximab",
+            "thrombopoietin agonists",
+            "splenectomy"
+        ],
+        "iron deficiency anemia": [
+            "oral iron supplementation",
+            "IV iron",
+            "dietary counseling",
+            "treating underlying cause"
+        ],
+        "sickle cell disease": [
+            "hydroxyurea",
+            "pain management",
+            "transfusions",
+            "folic acid",
+            "voxelotor",
+            "L-glutamine",
+            "stem cell transplant"
+        ],
+        "hemolytic anemia": [
+            "corticosteroids",
+            "splenectomy",
+            "rituximab",
+            "folic acid",
+            "treating underlying cause"
+        ],
+        "DIC": [
+            "treat underlying cause",
+            "transfusion support",
+            "platelets",
+            "FFP",
+            "cryoprecipitate",
+            "heparin"
+        ],
+        "TTP": [
+            "plasmapheresis",
+            "rituximab",
+            "caplacizumab",
+            "corticosteroids"
+        ],
+        "polycythemia vera": [
+            "phlebotomy",
+            "hydroxyurea",
+            "aspirin",
+            "ruxolitinib"
+        ],
+        "hemophilia": [
+            "factor replacement",
+            "desmopressin",
+            "emicizumab",
+            "gene therapy"
+        ],
+        "acute kidney injury": [
+            "IV fluids",
+            "diuretics",
+            "dialysis",
+            "electrolyte management",
+            "remove nephrotoxins"
+        ],
+        "chronic kidney disease": [
+            "ACE inhibitor",
+            "ARB",
+            "SGLT2 inhibitor",
+            "dietary restriction",
+            "dialysis",
+            "transplant",
+            "erythropoietin",
+            "phosphate binder"
+        ],
+        "nephrotic syndrome": [
+            "ACE inhibitor",
+            "corticosteroids",
+            "diuretics",
+            "statin",
+            "anticoagulation",
+            "cyclophosphamide"
+        ],
+        "nephritic syndrome": [
+            "blood pressure control",
+            "corticosteroids",
+            "cyclophosphamide",
+            "supportive care"
+        ],
+        "urinary tract infection": [
+            "antibiotics",
+            "nitrofurantoin",
+            "trimethoprim-sulfamethoxazole",
+            "ciprofloxacin",
+            "hydration"
+        ],
+        "pyelonephritis": [
+            "IV antibiotics",
+            "ceftriaxone",
+            "ciprofloxacin",
+            "IV fluids"
+        ],
+        "nephrolithiasis": [
+            "hydration",
+            "pain management",
+            "tamsulosin",
+            "lithotripsy",
+            "ureteroscopy"
+        ],
+        "renal cell carcinoma": [
+            "nephrectomy",
+            "targeted therapy",
+            "immunotherapy",
+            "sunitinib",
+            "nivolumab"
+        ],
+        "sepsis": [
+            "IV antibiotics",
+            "IV fluids",
+            "vasopressors",
+            "source control",
+            "lactate monitoring",
+            "blood cultures",
+            "corticosteroids"
+        ],
+        "cellulitis": [
+            "antibiotics",
+            "cephalexin",
+            "wound care",
+            "elevation"
+        ],
+        "osteomyelitis": [
+            "IV antibiotics",
+            "surgical debridement",
+            "long-term antibiotics"
+        ],
+        "HIV/AIDS": [
+            "antiretroviral therapy",
+            "HAART",
+            "prophylaxis",
+            "monitoring CD4 and viral load"
+        ],
+        "COVID-19": [
+            "supportive care",
+            "remdesivir",
+            "dexamethasone",
+            "anticoagulation",
+            "prone positioning",
+            "oxygen therapy",
+            "paxlovid"
+        ],
+        "influenza": [
+            "oseltamivir",
+            "supportive care",
+            "hydration",
+            "rest"
+        ],
+        "malaria": [
+            "chloroquine",
+            "artemisinin combination therapy",
+            "primaquine",
+            "supportive care"
+        ],
+        "dengue": [
+            "supportive care",
+            "IV fluids",
+            "platelet monitoring",
+            "pain management"
+        ],
+        "major depressive disorder": [
+            "SSRI",
+            "SNRI",
+            "psychotherapy",
+            "CBT",
+            "exercise",
+            "ECT"
+        ],
+        "bipolar disorder": [
+            "lithium",
+            "valproate",
+            "lamotrigine",
+            "atypical antipsychotics",
+            "psychotherapy"
+        ],
+        "schizophrenia": [
+            "atypical antipsychotics",
+            "risperidone",
+            "olanzapine",
+            "clozapine",
+            "psychosocial support"
+        ],
+        "generalized anxiety disorder": [
+            "SSRI",
+            "buspirone",
+            "CBT",
+            "benzodiazepines short-term"
+        ],
+        "panic disorder": [
+            "SSRI",
+            "CBT",
+            "benzodiazepines short-term",
+            "relaxation techniques"
+        ],
+        "PTSD": [
+            "SSRI",
+            "psychotherapy",
+            "EMDR",
+            "CPT",
+            "prazosin for nightmares"
+        ],
+        "anorexia nervosa": [
+            "nutritional rehabilitation",
+            "psychotherapy",
+            "medical stabilization",
+            "family therapy"
+        ],
+        "psoriasis": [
+            "topical corticosteroids",
+            "vitamin D analogs",
+            "phototherapy",
+            "methotrexate",
+            "biologics"
+        ],
+        "eczema": [
+            "emollients",
+            "topical corticosteroids",
+            "tacrolimus",
+            "dupilumab",
+            "antihistamines"
+        ],
+        "melanoma": [
+            "surgical excision",
+            "immunotherapy",
+            "targeted therapy",
+            "radiation"
+        ],
+        "Stevens-Johnson syndrome": [
+            "stop offending drug",
+            "wound care",
+            "IV fluids",
+            "burn unit care",
+            "IVIG"
+        ],
+        "osteoporosis": [
+            "bisphosphonates",
+            "calcium",
+            "vitamin D",
+            "denosumab",
+            "teriparatide",
+            "weight-bearing exercise"
+        ],
+        "spinal stenosis": [
+            "physical therapy",
+            "epidural injections",
+            "NSAIDs",
+            "surgical decompression"
+        ],
+        "herniated disc": [
+            "physical therapy",
+            "NSAIDs",
+            "epidural injections",
+            "surgery"
+        ],
+        "glaucoma": [
+            "prostaglandin analogs",
+            "beta-blockers",
+            "laser trabeculoplasty",
+            "surgery"
+        ],
+        "macular degeneration": [
+            "anti-VEGF injections",
+            "laser therapy",
+            "vitamin supplementation"
+        ],
+        "retinal detachment": [
+            "surgery",
+            "laser photocoagulation",
+            "pneumatic retinopexy",
+            "vitrectomy"
+        ],
+        "benign prostatic hyperplasia": [
+            "alpha-blocker",
+            "5-alpha reductase inhibitor",
+            "combination therapy",
+            "TURP"
+        ],
+        "prostate cancer": [
+            "active surveillance",
+            "prostatectomy",
+            "radiation",
+            "androgen deprivation",
+            "chemotherapy"
+        ],
+        "testicular torsion": [
+            "emergent surgical detorsion",
+            "orchiopexy"
+        ]
+    },
+    "drug_interactions": {
+        "warfarin": [
+            "aspirin",
+            "ibuprofen",
+            "metronidazole",
+            "amiodarone",
+            "fluconazole",
+            "ciprofloxacin",
+            "trimethoprim-sulfamethoxazole",
+            "acetaminophen high dose",
+            "vitamin K foods"
+        ],
+        "metformin": [
+            "contrast dye",
+            "alcohol",
+            "ACE inhibitor",
+            "cimetidine"
+        ],
+        "ACE inhibitor": [
+            "potassium supplements",
+            "spironolactone",
+            "ARB",
+            "NSAIDs",
+            "lithium",
+            "aliskiren"
+        ],
+        "corticosteroids": [
+            "NSAIDs",
+            "warfarin",
+            "diabetes medications",
+            "diuretics",
+            "CYP3A4 inhibitors"
+        ],
+        "lithium": [
+            "NSAIDs",
+            "ACE inhibitor",
+            "diuretics",
+            "SSRIs",
+            "carbamazepine"
+        ],
+        "digoxin": [
+            "amiodarone",
+            "verapamil",
+            "quinidine",
+            "diuretics",
+            "clarithromycin"
+        ],
+        "statins": [
+            "fibrates",
+            "CYP3A4 inhibitors",
+            "grapefruit",
+            "cyclosporine",
+            "niacin high dose"
+        ],
+        "clopidogrel": [
+            "PPI",
+            "aspirin",
+            "warfarin",
+            "NSAIDs"
+        ],
+        "SSRIs": [
+            "MAO inhibitors",
+            "tramadol",
+            "triptans",
+            "NSAIDs",
+            "anticoagulants",
+            "lithium"
+        ],
+        "methotrexate": [
+            "NSAIDs",
+            "trimethoprim-sulfamethoxazole",
+            "probenecid",
+            "penicillins"
+        ],
+        "levothyroxine": [
+            "calcium supplements",
+            "iron supplements",
+            "PPI",
+            "antacids",
+            "coffee"
+        ],
+        "insulin": [
+            "beta-blockers",
+            "alcohol",
+            "fluoroquinolones",
+            "corticosteroids",
+            "MAO inhibitors"
+        ],
+        "heparin": [
+            "NSAIDs",
+            "antiplatelet agents",
+            "thrombolytics",
+            "warfarin"
+        ],
+        "phenytoin": [
+            "warfarin",
+            "carbamazepine",
+            "valproate",
+            "isoniazid",
+            "fluconazole"
+        ],
+        "amiodarone": [
+            "warfarin",
+            "digoxin",
+            "simvastatin",
+            "cyclosporine",
+            "QT-prolonging drugs"
+        ],
+        "ciprofloxacin": [
+            "theophylline",
+            "warfarin",
+            "cyclosporine",
+            "antacids",
+            "NSAIDs",
+            "tizanidine"
+        ],
+        "cyclosporine": [
+            "statins",
+            "NSAIDs",
+            "potassium-sparing diuretics",
+            "aminoglycosides",
+            "grapefruit"
+        ]
+    },
+    "disease_departments": {
+        "myocardial infarction": "Cardiology",
+        "unstable angina": "Cardiology",
+        "heart failure": "Cardiology",
+        "atrial fibrillation": "Cardiology",
+        "aortic stenosis": "Cardiology",
+        "aortic dissection": "Cardiothoracic Surgery",
+        "infective endocarditis": "Cardiology",
+        "pericarditis": "Cardiology",
+        "hypertensive emergency": "Emergency Medicine",
+        "deep vein thrombosis": "Vascular Medicine",
+        "peripheral artery disease": "Vascular Surgery",
+        "cardiac tamponade": "Emergency Medicine",
+        "pneumonia": "Pulmonology",
+        "COPD": "Pulmonology",
+        "COPD exacerbation": "Pulmonology",
+        "asthma": "Pulmonology",
+        "pulmonary embolism": "Pulmonology",
+        "pleural effusion": "Pulmonology",
+        "pneumothorax": "Thoracic Surgery",
+        "pulmonary fibrosis": "Pulmonology",
+        "lung cancer": "Oncology",
+        "tuberculosis": "Infectious Disease",
+        "sarcoidosis": "Pulmonology",
+        "acute respiratory distress syndrome": "Critical Care",
+        "stroke": "Neurology",
+        "transient ischemic attack": "Neurology",
+        "subarachnoid hemorrhage": "Neurosurgery",
+        "meningitis": "Neurology",
+        "encephalitis": "Neurology",
+        "Alzheimer disease": "Neurology",
+        "Parkinson disease": "Neurology",
+        "multiple sclerosis": "Neurology",
+        "epilepsy": "Neurology",
+        "migraine": "Neurology",
+        "Guillain-Barre syndrome": "Neurology",
+        "myasthenia gravis": "Neurology",
+        "diabetes mellitus type 1": "Endocrinology",
+        "diabetes mellitus type 2": "Endocrinology",
+        "diabetic ketoacidosis": "Emergency Medicine",
+        "hypothyroidism": "Endocrinology",
+        "hyperthyroidism": "Endocrinology",
+        "Graves disease": "Endocrinology",
+        "Addison disease": "Endocrinology",
+        "Cushing syndrome": "Endocrinology",
+        "pheochromocytoma": "Endocrinology",
+        "cirrhosis": "Gastroenterology",
+        "hepatitis A": "Gastroenterology",
+        "hepatitis B": "Gastroenterology",
+        "hepatitis C": "Gastroenterology",
+        "pancreatitis": "Gastroenterology",
+        "cholecystitis": "General Surgery",
+        "appendicitis": "General Surgery",
+        "Crohn disease": "Gastroenterology",
+        "ulcerative colitis": "Gastroenterology",
+        "peptic ulcer disease": "Gastroenterology",
+        "GERD": "Gastroenterology",
+        "colorectal cancer": "Oncology",
+        "lupus": "Rheumatology",
+        "rheumatoid arthritis": "Rheumatology",
+        "gout": "Rheumatology",
+        "dermatomyositis": "Rheumatology",
+        "scleroderma": "Rheumatology",
+        "AML": "Hematology/Oncology",
+        "ALL": "Hematology/Oncology",
+        "CML": "Hematology/Oncology",
+        "CLL": "Hematology/Oncology",
+        "lymphoma": "Hematology/Oncology",
+        "multiple myeloma": "Hematology/Oncology",
+        "ITP": "Hematology",
+        "iron deficiency anemia": "Hematology",
+        "sickle cell disease": "Hematology",
+        "DIC": "Hematology",
+        "TTP": "Hematology",
+        "acute kidney injury": "Nephrology",
+        "chronic kidney disease": "Nephrology",
+        "nephrotic syndrome": "Nephrology",
+        "nephrolithiasis": "Urology",
+        "renal cell carcinoma": "Urology/Oncology",
+        "sepsis": "Critical Care",
+        "HIV/AIDS": "Infectious Disease",
+        "COVID-19": "Infectious Disease",
+        "tuberculosis": "Infectious Disease",
+        "major depressive disorder": "Psychiatry",
+        "bipolar disorder": "Psychiatry",
+        "schizophrenia": "Psychiatry",
+        "psoriasis": "Dermatology",
+        "melanoma": "Dermatology/Oncology",
+        "osteoporosis": "Endocrinology",
+        "glaucoma": "Ophthalmology",
+        "prostate cancer": "Urology/Oncology",
+        "testicular torsion": "Urology/Emergency Medicine"
+    },
+    "symptom_synonyms": {
+        "chest pain": [
+            "chest tightness",
+            "chest pressure",
+            "angina",
+            "substernal pain",
+            "precordial pain",
+            "retrosternal pain"
+        ],
+        "dyspnea": [
+            "shortness of breath",
+            "SOB",
+            "difficulty breathing",
+            "breathlessness",
+            "air hunger",
+            "respiratory distress"
+        ],
+        "headache": [
+            "cephalgia",
+            "head pain",
+            "cranial pain"
+        ],
+        "nausea": [
+            "queasy",
+            "sickness",
+            "emesis tendency",
+            "upset stomach"
+        ],
+        "vomiting": [
+            "emesis",
+            "throwing up"
+        ],
+        "fatigue": [
+            "tiredness",
+            "exhaustion",
+            "lethargy",
+            "malaise",
+            "weakness",
+            "asthenia",
+            "lassitude"
+        ],
+        "fever": [
+            "pyrexia",
+            "febrile",
+            "elevated temperature",
+            "hyperthermia"
+        ],
+        "edema": [
+            "swelling",
+            "fluid retention",
+            "pitting edema",
+            "anasarca"
+        ],
+        "cough": [
+            "tussis"
+        ],
+        "diarrhea": [
+            "loose stools",
+            "watery stools",
+            "frequent bowel movements"
+        ],
+        "constipation": [
+            "obstipation",
+            "difficulty passing stool"
+        ],
+        "joint pain": [
+            "arthralgia",
+            "joint ache"
+        ],
+        "rash": [
+            "skin eruption",
+            "exanthem",
+            "dermatitis"
+        ],
+        "weight loss": [
+            "cachexia",
+            "wasting",
+            "unintentional weight loss"
+        ],
+        "dizziness": [
+            "vertigo",
+            "lightheadedness",
+            "presyncope",
+            "unsteadiness"
+        ],
+        "syncope": [
+            "fainting",
+            "loss of consciousness",
+            "blackout",
+            "passing out"
+        ],
+        "palpitations": [
+            "heart racing",
+            "irregular heartbeat",
+            "heart fluttering",
+            "tachycardia"
+        ],
+        "abdominal pain": [
+            "stomach ache",
+            "belly pain",
+            "abdominal cramps",
+            "stomach pain"
+        ],
+        "back pain": [
+            "dorsalgia",
+            "lumbago",
+            "lower back pain"
+        ],
+        "confusion": [
+            "altered mental status",
+            "delirium",
+            "disorientation",
+            "cognitive impairment",
+            "encephalopathy"
+        ],
+        "weakness": [
+            "paresis",
+            "asthenia",
+            "debility",
+            "muscle weakness"
+        ],
+        "numbness": [
+            "paresthesia",
+            "tingling",
+            "hypoesthesia",
+            "loss of sensation"
+        ],
+        "bleeding": [
+            "hemorrhage",
+            "haemorrhage"
+        ],
+        "jaundice": [
+            "icterus",
+            "yellow skin",
+            "yellow eyes",
+            "hyperbilirubinemia"
+        ],
+        "pruritus": [
+            "itching",
+            "itchiness"
+        ],
+        "dysphagia": [
+            "difficulty swallowing",
+            "swallowing difficulty"
+        ],
+        "dysuria": [
+            "painful urination",
+            "burning urination"
+        ],
+        "hematuria": [
+            "blood in urine",
+            "bloody urine"
+        ],
+        "hemoptysis": [
+            "coughing up blood",
+            "blood in sputum"
+        ],
+        "melena": [
+            "black tarry stools",
+            "dark stools"
+        ],
+        "hematemesis": [
+            "vomiting blood",
+            "bloody vomit"
+        ],
+        "oliguria": [
+            "decreased urine output",
+            "low urine output",
+            "reduced urine"
+        ],
+        "polyuria": [
+            "excessive urination",
+            "frequent urination",
+            "increased urine output"
+        ],
+        "polydipsia": [
+            "excessive thirst",
+            "increased thirst"
+        ],
+        "tachycardia": [
+            "rapid heart rate",
+            "fast heart rate",
+            "elevated heart rate"
+        ],
+        "bradycardia": [
+            "slow heart rate",
+            "low heart rate"
+        ],
+        "hypotension": [
+            "low blood pressure",
+            "BP drop"
+        ],
+        "hypertension": [
+            "high blood pressure",
+            "elevated BP"
+        ],
+        "diaphoresis": [
+            "sweating",
+            "perspiration",
+            "excessive sweating"
+        ],
+        "tremor": [
+            "shaking",
+            "trembling"
+        ],
+        "seizures": [
+            "convulsions",
+            "fits",
+            "epileptic episodes"
+        ],
+        "anorexia": [
+            "loss of appetite",
+            "decreased appetite",
+            "poor appetite"
+        ],
+        "insomnia": [
+            "difficulty sleeping",
+            "sleep disturbance",
+            "sleeplessness"
+        ],
+        "anxiety": [
+            "nervousness",
+            "worry",
+            "apprehension"
+        ]
+    },
+    "disease_risk_factors": {
+        "myocardial infarction": [
+            "hypertension",
+            "diabetes",
+            "smoking",
+            "hyperlipidemia",
+            "family history",
+            "obesity",
+            "sedentary lifestyle",
+            "age > 45M or > 55F"
+        ],
+        "stroke": [
+            "hypertension",
+            "atrial fibrillation",
+            "diabetes",
+            "smoking",
+            "hyperlipidemia",
+            "prior stroke",
+            "carotid stenosis"
+        ],
+        "diabetes mellitus type 2": [
+            "obesity",
+            "family history",
+            "sedentary lifestyle",
+            "PCOS",
+            "gestational diabetes history",
+            "age > 45"
+        ],
+        "COPD": [
+            "smoking",
+            "alpha-1 antitrypsin deficiency",
+            "occupational exposure",
+            "air pollution"
+        ],
+        "lung cancer": [
+            "smoking",
+            "asbestos exposure",
+            "radon exposure",
+            "family history",
+            "occupational carcinogens"
+        ],
+        "colorectal cancer": [
+            "age > 50",
+            "family history",
+            "inflammatory bowel disease",
+            "high fat diet",
+            "sedentary lifestyle",
+            "Lynch syndrome"
+        ],
+        "osteoporosis": [
+            "age",
+            "female sex",
+            "low BMI",
+            "smoking",
+            "alcohol",
+            "corticosteroid use",
+            "family history",
+            "early menopause"
+        ],
+        "deep vein thrombosis": [
+            "immobilization",
+            "surgery",
+            "malignancy",
+            "oral contraceptives",
+            "obesity",
+            "thrombophilia",
+            "pregnancy"
+        ],
+        "pulmonary embolism": [
+            "DVT",
+            "immobilization",
+            "surgery",
+            "malignancy",
+            "oral contraceptives",
+            "thrombophilia"
+        ],
+        "cirrhosis": [
+            "alcohol abuse",
+            "hepatitis B",
+            "hepatitis C",
+            "NAFLD",
+            "autoimmune hepatitis"
+        ],
+        "heart failure": [
+            "coronary artery disease",
+            "hypertension",
+            "diabetes",
+            "valvular disease",
+            "alcohol abuse",
+            "viral myocarditis"
+        ],
+        "chronic kidney disease": [
+            "diabetes",
+            "hypertension",
+            "glomerulonephritis",
+            "polycystic kidney disease",
+            "NSAIDs overuse"
+        ],
+        "peptic ulcer disease": [
+            "H. pylori infection",
+            "NSAID use",
+            "smoking",
+            "alcohol",
+            "corticosteroids"
+        ],
+        "gout": [
+            "hyperuricemia",
+            "obesity",
+            "alcohol",
+            "diuretics",
+            "chronic kidney disease",
+            "purine-rich diet"
+        ]
+    },
+    "disease_icd10": {
+        "myocardial infarction": "I21",
+        "heart failure": "I50",
+        "atrial fibrillation": "I48",
+        "pneumonia": "J18",
+        "COPD": "J44",
+        "asthma": "J45",
+        "pulmonary embolism": "I26",
+        "stroke": "I63",
+        "meningitis": "G03",
+        "diabetes mellitus type 1": "E10",
+        "diabetes mellitus type 2": "E11",
+        "hypothyroidism": "E03",
+        "hyperthyroidism": "E05",
+        "cirrhosis": "K74",
+        "pancreatitis": "K85",
+        "Crohn disease": "K50",
+        "ulcerative colitis": "K51",
+        "lupus": "M32",
+        "rheumatoid arthritis": "M05",
+        "AML": "C92.0",
+        "ALL": "C91.0",
+        "iron deficiency anemia": "D50",
+        "acute kidney injury": "N17",
+        "chronic kidney disease": "N18",
+        "sepsis": "A41",
+        "HIV/AIDS": "B20",
+        "major depressive disorder": "F32",
+        "schizophrenia": "F20",
+        "osteoporosis": "M81"
+    },
+    "emergency_conditions": [
+        "myocardial infarction",
+        "stroke",
+        "pulmonary embolism",
+        "aortic dissection",
+        "cardiac tamponade",
+        "tension pneumothorax",
+        "sepsis",
+        "diabetic ketoacidosis",
+        "hypertensive emergency",
+        "subarachnoid hemorrhage",
+        "meningitis",
+        "anaphylaxis",
+        "status epilepticus",
+        "acute respiratory distress syndrome",
+        "gastrointestinal bleeding",
+        "testicular torsion",
+        "Stevens-Johnson syndrome",
+        "DIC",
+        "TTP"
+    ],
+    "disease_severity_indicators": {
+        "myocardial infarction": {
+            "high": [
+                "ST elevation",
+                "troponin > 10x",
+                "cardiogenic shock",
+                "cardiac arrest"
+            ],
+            "moderate": [
+                "troponin elevation",
+                "dynamic ECG changes"
+            ],
+            "low": [
+                "typical chest pain only"
+            ]
+        },
+        "pneumonia": {
+            "high": [
+                "septic shock",
+                "mechanical ventilation",
+                "multilobar"
+            ],
+            "moderate": [
+                "hypoxia",
+                "bilateral infiltrates"
+            ],
+            "low": [
+                "single lobe",
+                "stable vitals"
+            ]
+        },
+        "sepsis": {
+            "high": [
+                "septic shock",
+                "vasopressors",
+                "organ failure",
+                "lactate > 4"
+            ],
+            "moderate": [
+                "hypotension",
+                "altered mental status",
+                "lactate 2-4"
+            ],
+            "low": [
+                "SIRS criteria met"
+            ]
+        },
+        "heart failure": {
+            "high": [
+                "cardiogenic shock",
+                "intubation",
+                "EF < 20%"
+            ],
+            "moderate": [
+                "IV diuretics needed",
+                "EF 20-35%"
+            ],
+            "low": [
+                "oral medications",
+                "EF > 35%"
+            ]
+        },
+        "stroke": {
+            "high": [
+                "NIHSS > 15",
+                "large vessel occlusion",
+                "hemorrhagic conversion"
+            ],
+            "moderate": [
+                "NIHSS 5-15",
+                "cortical involvement"
+            ],
+            "low": [
+                "NIHSS < 5",
+                "lacunar infarct"
+            ]
+        }
+    }
+}
