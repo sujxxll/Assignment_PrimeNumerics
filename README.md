@@ -105,24 +105,6 @@ DB_PORT=3306
 ```
 > *Django will safely manage database drivers relying on the patched PyMySQL architecture.*
 
----
-
-## 🔒 VAPT & Production Security Deployment
-
-This system contains an integrated **Vulnerability Assessment and Penetration Testing (VAPT)** configuration inside `backend/config/settings.py` targeting standard enterprise deployment benchmarks. 
-
-By simply changing your base `.env` string to:
-```ini
-DEBUG=False
-```
-The application will **automatically** lock down the environment by enabling:
-- HTTPS / SSL Enforcement (`SECURE_SSL_REDIRECT = True`)
-- Strictly secure Session and CSRF cookies (`SESSION_COOKIE_SECURE = True`)
-- HTTP Strict Transport Security (HSTS) spanning headers and subdomains for up to 1 year.
-- Cross-Site Scripting (XSS) filters and No-Sniff Content Types.
-
----
-
 ## 📊 Live API Endpoints
 
 | Endpoint | Method | Description |
